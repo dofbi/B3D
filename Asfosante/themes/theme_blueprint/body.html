@@ -1,0 +1,32 @@
+[(#REM)
+ see http://wiki.github.com/joshuaclayton/blueprint-css/quick-start-tutorial
+ for customization
+]
+<div class="container showgrid">
+    <div class="span-24 header">
+			[(#REM)	HEADER / ENTETE ]
+			#INCLURE{fond=inclure/entete,env}
+    </div>
+		<div class="span-24 nav">
+			[(#REM)	MAIN NAVIGATION / NAVIGATION PRINCIPALE ]
+			#INCLURE{fond=inclure/barre-nav,env}
+		</div>
+    <div class="span-5 sidebar">
+			[(#REM)	SECONDARY NAVIGATION SIDEBAR / Navigation laterale secondaire ]
+			#INCLURE{fond=navigation/#ENV{type},env}
+    </div>
+
+    <div class="span-15 content">
+			[(#REM)	CONTENT / CONTENU ]
+			#INCLURE{fond=contenu/#ENV{type},env}
+    </div>
+
+    <div class="span-4 last extra">
+			[(#REM)	EXTRA INFORMATIONS / Informations complementaires]
+			#INCLURE{fond=extra/#ENV{type},env}
+    </div>
+    <div class="span-24 footer">
+			[(#REM)	FOOTER / Pied de page ]
+			#INCLURE{fond=inclure/pied,env}
+    </div>
+</div>

@@ -1,0 +1,714 @@
+/* --------------------------------------------------------- */
+/* Feuille de style des squelettes par defaut pour SPIP 2.0  */
+/* --------------------------------------------------------- */
+/* ----------------------------------------------
+	Template Name : Keep It Simple
+	Template Code : S-0027
+	Version : 1.0   
+	Author : Erwin Aligam
+	Author URI : http://www.styleshout.com/       
+	Last Date Modified : September 29, 2008	
+	Adaptation pour Zpip : Cedric Morin http://www.yterium.com
+ ------------------------------------------------ */
+/* http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/*  ------------------------------------------
+/* 	Typographie generale (style transversaux)
+/*  ------------------------------------------ */
+html { font-size: 100%; } /* Cf.: http://pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/ */
+body { 	font: 11px/165% 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	color: #666666; 	
+}
+
+
+/* Couleurs des liens
+---------------------------------------------- */
+a:link, a:visited { 
+	text-decoration: none;
+	color: #AE855C;	
+}
+a:hover {
+	border-bottom: 1px dotted #AE855C;	
+}
+a.more-link {
+	padding-bottom: 2px;
+	font-weight: bold;	
+	border-bottom: 1px dotted #AE855C;	
+}
+a:hover.more-link {
+	text-decoration: none;
+}
+
+/* Titraille / Intertitres */
+h1,.h1, h2,.h2, h3,.h3, h4,.h4 {
+	font: bold 1em/1.5em Georgia, 'Times New Roman', Times, serif;
+	color: #444;
+	padding: 10px 0px 7px;
+}
+h1,.h1 { font-size: 3.7em; font-weight: normal; letter-spacing: -2px; }
+h2,.h2 { font-size: 2.8em; font-weight: normal; color: #663333; }
+h3,.h3 { font-size: 2em; font-weight: normal; letter-spacing: -0.5px; padding-top: 15px}
+h4,.h4 { font-size: 1.3em; }
+h3.spip {} /*Cf.: spip_style.css*/
+
+/* Divers */
+hr.spip {} /*Cf.: spip_style.css*/
+abbr,acronym {
+  cursor: help;
+  border-bottom: 1px dotted #895F30;
+}
+
+.small { font-size: 0.90em; color: #666; }
+
+/* Listes SPIP */
+ul, ol {
+	margin: 10px 20px;
+	padding: 0 20px;
+}
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+dt {
+  font-weight: bold;
+  color: #7BA857;
+}
+dd {
+  padding-left: 25px; 
+}
+
+p, dl { padding: 10px 0px; }
+ul.spip {} /*Cf.: spip_style.css*/
+ol.spip {} /*Cf.: spip_style.css*/
+
+/* Citations, code et poesie */
+blockquote.spip {} /*Cf.: spip_style.css*/
+blockquote.spip {
+	margin: 10px 0;
+	padding: 10px;
+	padding-left:42px;
+	border: 1px solid #F0F0F0;
+	background: #f8f8f8 url(img/quote.gif) no-repeat 12px 12px;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1.5em;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	color: #555;
+}
+blockquote.spip_poesie {} /*Cf.: spip_style.css*/
+.spip_code {} /*Cf.: spip_style.css*/
+.spip_code {
+	margin: 3px 0;
+	font: 500 1em/1.5em 'Lucida Console', 'Courier New', Monospace ;
+	/* white-space: pre; */
+}
+.spip_cadre {
+	margin: 3px 0;
+	padding: 15px;
+	text-align: left;
+	display: block;
+	overflow: auto;  
+	font: 500 1em/1.5em 'Lucida Console', 'Courier New', Monospace ;
+	/* white-space: pre; */
+	border: 1px solid #F0F0F0;
+	background: #f8f8f8;
+	width:90%;
+} /*Cf.: spip_style.css*/
+
+/* Tableaux */
+table.spip {} /*Cf.: spip_style.css*/
+table.spip {
+	border-collapse: collapse;
+	margin: 10px 0;
+}
+table.spip tr { background: #fff; }
+table.spip tr.row_odd { background: #F9F9F9;	}
+table.spip th,table.spip td {
+	text-align: left;			
+	border-width: 1px;
+	border-style: solid;
+}
+table.spip th {
+	color: #7BA857;
+	background: #EFFAE6;
+	padding: .8em 1em;	
+	border-color: #DFF4D5 #D3EFC3 #A7DF8A #D3EFC3;
+}
+table.spip td {
+	border-color: #EFEFEF;	
+	padding: .7em 1em;	
+}	
+/* end - table */
+
+/* Logos, documents et images */
+.spip_logos {} /*Cf.: spip_style.css*/
+.spip_documents {} /*Cf.: spip_style.css*/
+.spip_documents_center {} /*Cf.: spip_style.css*/
+.spip_documents_left {} /*Cf.: spip_style.css*/
+.spip_documents_right {} /*Cf.: spip_style.css*/
+.spip_doc_titre {} /*Cf.: spip_style.css*/
+.spip_doc_descriptif {} /*Cf.: spip_style.css*/
+/* Images */
+.spip_documents img,.spip_logos img {
+	background: #FAFAFA;
+   border: 1px solid #DCDCDC;
+	padding: 8px;
+}
+.spip_documents_left {
+  	margin: 5px 0px 10px;  
+  	margin-right: 26px;
+}
+.spip_documents_right {
+  	margin: 5px 0px 10px;
+  	margin-left: 10px;
+  	margin-right: 16px;
+}
+
+
+/*  ------------------------------------------
+/*  Disposition a l'ecran des blocs principaux
+/*  ------------------------------------------ */
+body { margin: 0; padding: 0; text-align: center;	margin: 0; padding: 0; 
+	background: #F6F5F5;
+}
+
+#page {	width: 100%;position: relative; margin: 0 auto; text-align: left;background:#fff url(img/bg.gif) repeat-x; }
+
+#bloc-haut{
+	width: 960px;
+	margin: 0 auto;
+	background: url(img/header-image.gif) no-repeat top right;
+}
+#entete {
+	position: relative;
+	background: url(img/border.gif) repeat-x left bottom;
+	height: 330px;
+	padding:54px 0 0 0;
+}
+#entete .accueil #nom_site_spip {
+	position: absolute;
+	margin: 0; padding: 0 5px 0 0;
+	font: normal 75px Georgia, 'Times New Roman', Times, serif;
+	letter-spacing: -6px;
+	color: #93b876;
+	text-decoration: none;
+		
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 90px; left: 20px;	
+}
+#entete .accueil #nom_site_spip a{color: #93b876;}
+
+#entete .accueil img.spip_logos { 	
+	position: absolute;
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 60px; right: 10px;	
+}
+#entete #slogan_site_spip {
+	color:#7BA45B;
+	font-family:Georgia,'Times New Roman',Times,Serif;
+	font-size:17px;
+	font-style:italic;
+	font-weight:normal;
+	letter-spacing:-0.5px;
+	line-height:1.6em;
+	margin:0pt;
+	padding:0pt;
+	position:absolute;
+	width:400px;
+	/* change the values of top and left to adjust the position of the logo*/
+	top:175px; left:110px;
+}
+
+/*  navigation  */
+#nav {
+	position: absolute;
+	margin: 0; padding: 0;		
+	width: 880px;	
+	left: 0;	top: 5px;		
+}
+#nav .menu-liste {
+	float: left;	
+	list-style: none;	
+	margin: 5px 0 0 0;
+	height: 45px;
+	padding: 0 0 0 15px;
+	border:0;
+}
+#nav .menu-liste .menu-entree {
+	float: left;
+	margin: 0; padding: 0 0 0 10px;
+	background:none;
+}
+#nav .menu-liste .menu-entree a {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 5px;
+	color: #666666;
+	font: bold 14px/40px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
+	text-transform: uppercase;	
+}
+#nav .menu-liste .menu-entree a:hover,
+#nav .menu-liste .menu-entree a:active {
+	border: none;
+	color: #111;
+	background: transparent;
+}
+#nav .menu-liste .menu-entree.on {
+	background: transparent url(img/left-tab.gif) no-repeat;
+}
+#nav .menu-liste .menu-entree.on a {
+	color: #444;
+	background: transparent url(img/right-tab.gif) no-repeat right top;
+}
+#nav .menu-entree .menu-liste{
+display:none;
+}
+
+#bloc-central{width:960px;margin:0 auto;}
+#conteneur { float: left; width: 100%; background: #fff url(img/content-bg.gif) repeat-y center top;	}
+#contenu { padding-bottom: 35px;	padding-top: 5px;		margin-left:10px;margin-right:490px;}
+
+
+#navigation { float: left; width: 220px; margin-top: 5px; margin-left:-470px; overflow: hidden;}
+#extra { float: left; width:220px; margin-top: 5px; margin-left:-230px; overflow: hidden; }
+#navigation .h3,#extra .h3 {
+	color: #444;
+	font: normal 2em Georgia, 'Times New Roman', Times, Serif;
+	letter-spacing: -0.5px;
+	padding: 5px 10px;
+	margin: 12px 0 5px 0;
+}
+
+
+#bloc-bas {		background: #F6F5F5;clear: both;width:100%;border-top:1px solid #E8E8E8;text-align: center;padding:10px 0 50px;}
+#pied {width: 960px; margin: 0 auto; padding: 1em 0; text-align: left; font-size: 0.90em; }
+#pied img { vertical-align: middle; }
+#pied .h3,
+#pied p {
+	padding-left: 0;
+}
+#pied a {
+	color: #333;
+	background: transparent;
+}
+
+/* footer-list */
+#pied ul.footer-list {
+	border-top: 1px solid #E6E6E6;
+	list-style: none;
+	padding: 0;	
+	margin-left: 0;	
+}
+#pied ul.footer-list li {
+	border-bottom: 1px solid #E6E6E6;
+}
+#pied ul.footer-list li a {
+	display: block;
+	width: 98%;
+	line-height: 2em; 
+	font-weight: bold;
+	padding: 4px 0;
+	margin-left: 0;
+	padding-left: 0;
+	color: #888;
+	border: none;
+}
+#pied ul.footer-list li a span {
+	font-style: italic;
+	font-weight: normal;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+#pied ul.footer-list li a:hover,
+#pied ul.footer-list li a:hover span {
+	color: #333;	
+}
+/* footer-content */
+#pied-contenu {
+	float: left;	
+	width: 100%;	
+	padding: 0 0 35px 0;				
+	margin: 10px 0 0 5px;			
+}
+
+/* footer-bottom */
+#pied-bas {
+	clear: both;
+	border-top: 1px solid #dadada;
+	width: 940px;
+	margin: 0 auto;	
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;
+}
+#pied-bas .bottom-left {
+	float: left;
+	padding-left: 5px;		
+}
+#pied-bas .bottom-right {
+	text-align: right;
+	padding-right: 0;
+}
+
+
+/*  ------------------------------------------
+/*  Habillage des elements du contenu
+/*  ------------------------------------------ */
+#descriptif_site_spip {
+	color:#7BA45B;
+	font-family:Georgia,'Times New Roman',Times,Serif;
+	font-size:17px;
+	font-style:italic;
+	font-weight:normal;
+	letter-spacing:-0.5px;
+	line-height:1.6em;
+	margin:0pt;
+}
+/* main column */
+#contenu h2,#contenu .h2 {
+	font: normal 3.7em Georgia, 'Times New Roman', Times, Serif;
+	color: #444;
+	letter-spacing: -2.2px;	
+	margin-right: 15px;
+	padding-bottom: 3px;
+	/*border-bottom: 1px solid #ebebeb;	*/
+}
+#contenu h2 a,#contenu .h2 a {
+	color: #444;
+	border: none;
+}
+
+#hierarchie { clear: both; margin-bottom: 2em; font-size: 0.90em; }
+#hierarchie, #hierarchie a { color: #666; }
+
+.cartouche { margin-bottom: 2em; }
+.cartouche .spip_logos { float: right; margin-left: 16px; margin-bottom: 4px; }
+.cartouche p { margin: 0; padding: 0; clear: left; }
+.surtitre, .soustitre { font-size: 0.90em; color: #666; text-transform: uppercase; letter-spacing: 0.10em; }
+.cartouche .surtitre { margin-bottom: 0.30em; }
+.cartouche .soustitre { margin-top: 0.50em; margin-bottom: 0.30em; }
+.cartouche .traductions { font-size: 0.90em; }
+
+.chapo { margin-bottom: 1.50em; line-height: 1.40em; font-weight: bold; color: #669; }
+.texte { line-height: 1.60em; }
+.hyperlien { display: block; background: #EEE; padding: 0.50em 1em; font-weight: bold; color: #8B6F92; }
+.ps, .notes { margin-bottom: 2em; line-height: 1.40em; }
+.notes { clear: both; font-size: 0.90em; }
+
+abbr.published { border: 0; }
+
+/* Portfolio */
+.documents_portfolio { clear: both; margin: 2em auto; text-align: center; }
+.documents_portfolio .spip_logos { margin: 6px 3px 0 3px; padding: 4px; border: 1px solid #DDD; }
+.documents_portfolio a:hover .spip_logos { border-color: #F57900; }
+.documents_portfolio a.on .spip_logos { border-color: #8B6F92; }
+#document_actif { margin: 1em auto; }
+#document_actif img { padding: 4px; border: 1px solid #DDD; }
+
+
+/* Habillage des forums
+---------------------------------------------- */
+.repondre { clear: both; margin-top: 0em; margin-right: 1em; text-align: right; font-weight: bold; }
+
+/* * Habillage des forums */
+ul.forum { display: block; clear: both; margin: 0; padding: 0; }
+ul.forum, ul.forum ul { list-style: none; }
+/*
+.forum-fil { margin-top: 1.50em; }
+.forum-fil ul { display: block; margin: 0; padding: 0; margin-left: 1em; }
+.forum-chapo .forum-titre, .forum-chapo .forum-titre a { display: block; margin: 0; padding: 0; font-weight: bold; color: #333; }
+.forum-texte { margin: 0; padding: 0.50em 1em; color: #333; }
+.forum-texte .hyperlien {}
+.forum-texte .repondre { margin: 0; padding: 0.10em 0; text-align: right; }
+
+/* Boite d'un forum : eclaircissement progressif des bords * /
+ul .forum-message { border: 1px solid #666; margin: 0; padding: 0; margin-bottom: 1em; }
+ul ul .forum-message { border: 1px solid #A4A4A4; }
+ul ul ul .forum-message { border: 1px solid #B8B8B8; }
+ul ul ul ul .forum-message { border: 1px solid #CCC; }
+ul ul ul ul ul .forum-message { border: 1px solid #E0E0E0; }
+ul ul ul ul ul ul .forum-message { border: 1px dotted #E0E0E0; }
+
+/* Boite de titre d'un forum : mise en couleur selon la profondeur du forum * /
+ul .forum-chapo { border: 0; border-bottom: 1px dotted #B8B8B8; margin: 0; padding: 3px 6px 2px 6px; background: #C4E0E0; }
+ul ul .forum-chapo { background: #D4E8E8; }
+ul ul ul .forum-chapo { background: #E4F0F0; }
+ul ul ul ul .forum-chapo { background: #F4F8F8; border-bottom: 1px dotted #E0E0E0; }
+ul ul ul ul ul .forum-chapo { background: #FFF; }
+*/
+
+
+/* comments list */
+ul.forum,ul.forum ul {
+	margin: 12px 10px;
+	padding: 0;
+	border-style: solid;	
+	border-color: #F0F0F0;	
+	border-width: 1px 1px 0 1px;
+}
+ul.forum ul { margin:0; }
+.forum li {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	border-bottom: 1px solid #F0F0F0; 
+}
+.forum li cite {
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	padding: 7px;	
+}
+.forum li cite img {
+	float: left;
+	margin-right: 10px;	
+}
+.forum li cite .forum-chapo {
+	font-size: .8em;
+	font-weight: normal;
+}
+.forum li .forum-texte {
+	clear: both;
+	margin: 0; padding: 0;
+}
+.forum li.alt {
+	background: #f8f8f8 
+}
+
+/*  ------------------------------------------
+/*  Sous-navigation et autres menus
+/*  ------------------------------------------ */
+
+/* Habillage general des menus de navigation */
+.menu p,.liste p { margin: 0.20em 0; padding: 0.20em 0.10em; }
+
+/* menu */
+.menu-liste {
+	text-align: left;
+	margin: 10px 8px 8px 8px; padding: 0;
+	border-top: 2px solid #ebebeb; 
+}
+.menu-liste .menu-entree {
+	list-style: none;
+	background: url(img/dots.gif) repeat-x left bottom;
+	padding: 7px 5px;
+	margin: 0;		
+}
+* html body .menu-liste .menu-entree {
+	height: 1%;
+}
+.menu-liste .menu-entree a,
+.menu-liste .menu-entree a:visited {
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	background-image: none;	
+	background-color: transparent;
+	border: none;
+	color: #7BA857;
+	padding-left: 0;	
+}
+.menu-liste .menu-entree a span {
+	color: #9F9F9F;	
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-style: normal;
+	font-size: 1em;
+}
+.menu-liste .menu-entree a:hover { color: #000;	}
+.menu-liste .menu-liste { margin:0;margin-left: 5px; padding: 0; }
+.menu-liste .menu-liste .menu-entree { background: none; }
+
+/* Liste d'items */
+.liste-items {
+	text-align: left;
+	margin: 10px 0px 8px; padding: 0;
+	border-top: 2px solid #ebebeb;
+}
+.liste-items .item {
+	list-style: none;
+	background: url(img/dots.gif) repeat-x left bottom;
+	padding: 7px 5px;
+	margin: 0;
+	overflow:hidden;
+}
+* html body .liste-items .item {
+	height: 1%;
+}
+.liste-items .item a,
+.liste-items .item a:visited {
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	color: #7BA857;
+	padding-left: 0;
+}
+.liste-items .item a span {
+	color: #9F9F9F;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-style: normal;
+	font-size: 1em;
+}
+.liste-items .item a:hover { color: #000;	}
+
+
+/* Pagination */
+.pagination { clear: both; text-align: right; font-size: 0.90em; color: #666; }
+.pagination .on { font-weight: bold; color: #666; }
+
+/* Rubriques */
+/*.rubriques ul { border: 0; }
+.rubriques ul li { background: #EEE; border: 0; }*/
+
+.formulaire_recherche { margin-bottom: 2em; } /*Cf.: spip_formulaires.css*/
+
+/* Listes d'articles et extraits introductifs */
+.articles .liste-items .item { clear: both; padding: 0.40em 0.20em 0.80em; }
+.articles .liste-items .item  .h3 { margin: 0.30em 0; padding-top:0; }
+.articles .spip_logos { float: right; clear: right; margin: 0 0 4px 16px; }
+.articles .liste-items .item .enclosures { float: right; text-align: right; max-width: 60%; margin: 0; }
+.articles .liste-items .item .introduction { margin-top: 0.30em; line-height: 1.40em; }
+
+.info-publi { font-size: .95em; padding-top: 3px; color: #B0B0B0; }
+.info-publi a, .info-publi a:visited { color: #000; border: none; }
+.h3 + .info-publi {margin-top:-15px;}
+
+/* meta-publi */
+.meta-publi {
+	padding: 5px; margin: 20px 0px 15px 0px;
+	border: 1px solid #EBEBEB;
+	background: #f8f8f8;
+}
+.meta-publi a { background: transparent; }
+.meta-publi a:hover { border: none; }
+.meta-publi .nb_commentaires { margin: 0 10px 0 5px;	}
+.meta-publi .lire-la-suite { margin: 0 10px 0 5px;	}
+.meta-publi .date-redac{ margin: 0 10px 0 5px;	}
+
+
+
+/* formulaires */
+.formulaire_spip {padding:10px;}
+.formulaire_spip {	
+	margin: 20px 0;  
+	border: 1px solid #F0F0F0;
+	background: #f8f8f8;
+}
+#main .formulaire_spip {padding: 15px 25px 25px 20px;}
+
+.formulaire_spip li {
+	border-bottom: 1px solid #E6E6E6;
+	padding: 12px 0 5px 0;	margin: 0;	
+	color: #7BA857;
+}
+.formulaire_spip li label {
+	font-weight: bold;
+	color: #7BA857;
+}
+.formulaire_spip input.text,input.password, select, textarea {
+	margin: 5px 0;
+	padding: 5px;
+	color: #6A6969;
+	border-width: 1px;
+	border-style: solid;
+  	border-color: #d4d4d4 #ebebeb #ebebeb #d4d4d4; 	
+	font: 11px 'Lucida Grande', Verdana, Helvetica, sans-serif;
+}
+.formulaire_spip input.text:focus,input.password:focus, select:focus, textarea:focus {
+	color: #7BA857;
+	background: #EFFAE6;
+}
+.formulaire_spip .boutons input { 
+	font: bold 12px Arial, Sans-serif; 
+	height: 30px;
+	margin: 0;
+	padding: 2px 3px; 
+	color: #fff;
+	background: #9CCF5F;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #B6DE8F #8DB836 #8DB836 #B6DE8F;
+  text-align:left !important;
+}
+
+.formulaire_spip fieldset legend {background:#F8F8F8;}
+.formulaire_spip .explication {padding:0;}
+
+#entete .formulaire_menu_lang { position: absolute; right: 0; top: 200px; display: block; margin:0;width: 235px;padding:0;background:none;border:0; } /*Cf.: spip_formulaires.css*/
+
+/* header quick search */
+.formulaire_recherche {
+	border: 1px solid #bababa;
+	background: #fafafa;
+	z-index: 999999;
+	padding:2px;
+	margin:0;
+}
+#navigation .formulaire_recherche {padding:2px;}
+
+.formulaire_recherche  input.text {
+	color: #bababa;
+	/*float: left;*/
+	margin: 0; padding: 5px;
+	background:#fafafa;border:none;
+	width:265px;
+}
+#navigation .formulaire_recherche  input.text {width:165px;}
+
+.formulaire_recherche  input.submit{
+	text-indent:-1000px;
+	width: 25px; height: 24px;
+	border:0;
+	background:#fff url(img/search.gif) no-repeat top left;
+}
+.formulaire_recherche label {
+	display: none;
+}
+
+/*  ------------------------------------------
+/*  Autres supports
+/*  ------------------------------------------ */
+
+/* Affichage pour les petits ecrans (type 400 x 300) */
+@media handheld, only screen and (max-device-width: 481px), only and (max-device-width: 400px), only and (max-width: 400px) {
+div#page, div#conteneur, div#navigation, div#extra { width: auto; }
+}

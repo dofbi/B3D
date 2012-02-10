@@ -1,0 +1,46 @@
+	<div id="page">
+		[(#REM) Entete de la page + titre du site ]
+		<div id='bloc-haut'>
+			<div id="entete">
+				[(#REM)	HEADER / ENTETE ]
+				<INCLURE{fond=inclure/entete,env}>
+			</div>
+			<div id="nav">
+				[(#REM)	MAIN NAVIGATION / NAVIGATION PRINCIPALE ]
+				<INCLURE{fond=inclure/barre-nav,env, identifiant=barrenav}>
+			</div><!--header ends-->
+		</div>
+		
+		<div id='bloc-central'>
+	
+			[(#REM) Contenu principal : contenu de l'article ]
+	    <div class="hfeed" id="conteneur">
+	    	<div class="hentry" id="contenu">
+					[(#REM)	CONTENT / CONTENU ]
+					<INCLURE{fond=contenu/#ENV{type},env}>
+				</div><!--#contenu-->
+			</div><!--#conteneur-->
+	
+	    [(#REM) Menu de navigation laterale ]
+	    <div id="navigation">
+		    [(#REM)	SECONDARY NAVIGATION SIDEBAR / Navigation laterale secondaire ]
+				<INCLURE{fond=navigation/#ENV{type},env}>
+	    </div><!--#navigation-->
+	    
+	    [(#REM) Menu de navigation laterale ]
+	    <div id="extra">
+		    [(#REM)	EXTRA INFORMATIONS / Informations complementaires]
+				<INCLURE{fond=extra/#ENV{type},env}>
+	    </div><!--#extra-->
+	
+			<div class='nettoyeur'></div>
+		</div><!-- #bloc-central-->
+		[(#REM) Pied de page ]
+		<div id="bloc-bas">
+			<div id="pied">
+				[(#REM)	FOOTER / Pied de page ]
+				<INCLURE{fond=inclure/pied,env}>
+				<INCLURE{fond=inc-theme-copyleft}>
+			</div>
+		</div>
+	</div><!--#page-->

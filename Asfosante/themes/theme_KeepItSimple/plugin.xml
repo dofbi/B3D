@@ -1,0 +1,21 @@
+<plugin>
+	<nom>KeepItSimple</nom>
+	<auteur>[Styleshout.com->www.styleshout.com] - adapt&#233; pour Zpip par C&#233;dric Morin - [yterium.com->http://www.yterium.com]</auteur>
+	<version>1.0.0</version>
+	<licence>Creative Commons Attribution 2.5</licence>
+	<slogan><multi>
+	[en]A grid-based website Z template for news and blogs
+	[fr]Th&#232;me Z minimaliste pour un site de news ou un blog
+	</multi></slogan>
+	<description><multi>
+	[en]A grid-based, minimalist website template. Ideal for news websites and blogs with lots of contents.
+	[fr]Un th&#232;me minimaliste. Id&#233;al pour un site de news ou un blog avec assez de contenu.
+	</multi></description>
+	<icon>vignette.jpg</icon>
+	<etat>stable</etat>
+	<prefix>theme_keepitsimple</prefix>
+	<lien>http://www.spip-contrib.net/KeepItSimple</lien>
+	<necessite id="SPIP" version="[2.0.10;3.0.99]" />
+	<utilise id="Z" version="[1.2.0;]" />
+	<categorie>theme</categorie>
+</plugin>
