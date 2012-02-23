@@ -1,0 +1,8 @@
+<select id="urlspip"><BOUCLE_rubriques(RUBRIQUES)>
+	<option value="#URL_RUBRIQUE">#TITRE</option><BOUCLE_breves(BREVES) {id_rubrique} {par date} {inverse} >
+	<option value="#URL_BREVE">&nbsp;
+&nbsp;
+&raquo;
+&nbsp;
+#TITRE</option></BOUCLE_breves>
+</BOUCLE_rubriques></select>

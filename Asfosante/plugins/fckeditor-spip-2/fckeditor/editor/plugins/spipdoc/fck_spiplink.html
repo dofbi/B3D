@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * SpipLink Plugin.
+-->
+<html>
+	<head>
+		<title>SpipLink</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="noindex, nofollow" name="robots">
+		<script src="../../dialog/common/fck_dialog_common.js" type="text/javascript"></script>
+		<script language="javascript">
+
+/******************************************
+* Ajax load XML file script -- By Eddie Traversa (http://dhtmlnirvana.com/)
+* Script featured on Dynamic Drive (http://www.dynamicdrive.com/)
+* Keep this notice intact for use
+******************************************/
+   
+function ajaxLoader(url,id) {
+	if (document.getElementById) {
+		var x = (window.ActiveXObject) ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
+	}
+	if (x) {
+		x.onreadystatechange = function() {
+			if (x.readyState == 4 && x.status == 200) {
+				el = document.getElementById(id);
+				var debut = x.responseText.indexOf("<select") ;
+				var fin = x.responseText.indexOf("</select>") + 9 ;
+				var selText = x.responseText.substr(debut, fin-debut+1) ;
+				el.innerHTML = selText;
+			}
+		}
+		x.open("GET", url, true);
+		x.send(null);
+	}
+}
+
+var dialog = window.parent ;
+var oEditor = dialog.InnerDialogLoaded() ;
+var FCKLang = oEditor.FCKLang ;
+var FCKSpipLinks = oEditor.FCKSpipLinks ;
+
+var eSelected = dialog.Selection.GetSelection() ;
+
+function getProperties(/*Object*/ obj){
+    var msg = "";
+        for (prop in obj){
+	        msg += "property : " + prop + "\t\t value : " + obj[prop] + "\n";
+		    }
+		        alert(msg);
+			}
+
+
+window.onload = function ()
+{
+	// First of all, translate the dialog box texts
+	oEditor.FCKLanguageManager.TranslatePage( document ) ;
+
+	LoadSelected() ;
+
+
+	// Show the "Ok" button.
+	dialog.SetOkButton( true ) ;
+
+	// Select text field on load.
+	SelectField( 'documents' ) ;
+}
+
+function LoadSelected()
+{
+
+var selection = "";
+if(oEditor.FCK.EditorDocument.selection != null) {
+	selection = oEditor.FCK.EditorDocument.selection.createRange().text;
+} else {
+	selection = oEditor.FCK.EditorDocument.getSelection(); // after this, won't be a string
+	selection = "" + selection; // now a string again
+}
+
+	if (selection) {
+		var linktext = document.getElementById("spiplinktext") ;
+
+
+
+		linktext.value = selection ;
+	}
+}
+
+function Ok()
+{
+	var myselect = document.getElementById("urlspip") ;
+	var selecteditem = myselect.options[myselect.selectedIndex] ;
+	var re = /\s*»\s*/ ;
+	FCKSpipLinks.AddLink(selecteditem.text.replace(re,''), selecteditem.value, document.getElementById("spiplinktext").value) ;
+// modif YATY : suppression FCKSpipLinks.SiteSPIP+'/'+
+// code d'origine :
+// FCKSpipLinks.AddLink(selecteditem.text.replace(re,''), FCKSpipLinks.SiteSPIP+'/'+selecteditem.value, document.getElementById("spiplinktext").value) ;
+	return true ;
+}
+
+		</script>
+	</head>
+	<body scroll="no" style="OVERFLOW: hidden">
+		<form name='mon_form'>
+		<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			<tr>
+				<td>
+					<table cellSpacing="0" cellPadding="0" align="center" border="0">
+						<tr>
+							<td>
+								<span fckLang="SpipLingDlgType">What kind of SPIP Link do you wish ?</span>
+								<br/>
+								<select id="spiplinktype" onChange="ajaxLoader(FCKSpipLinks.SiteSPIP+'/spip.php?page=select_'+this.value,'spiplinkselect');">
+									<option value="articles">Articles</option>
+									<option value="breves">Breves</option>
+									<option value="sites">Sites</option>
+									<option value="mots">Mots</option>
+									<option value="auteurs">Auteurs</option>
+								</select>
+							</td>
+						<tr>
+							<td>
+								<span fckLang="SpipLinkDlgName">Insert SPIP Link to :</span>
+							</td>
+						</tr>
+						<tr>
+							<td id="spiplinkselect">
+	<script type="text/javascript" language="javascript">
+		<!--
+		ajaxLoader(FCKSpipLinks.SiteSPIP+"/spip.php?page=select_articles","spiplinkselect") ;
+		-->
+	</script>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span fcklang="SpipLinkText">Link's text :</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="spiplinktext" type="text"/><br/>
+								<span fcklang="SpipLinkTextHelp">Leave it blank for default link's text.</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		</form>	
+	</body>
+</html>

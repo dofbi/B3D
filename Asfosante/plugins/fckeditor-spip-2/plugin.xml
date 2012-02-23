@@ -1,0 +1,49 @@
+<plugin>
+	<nom>fckeditor-spip 2.6.5</nom>
+	<auteur>[Frédéric Bonnaud->mailto:fred@lea-linux.org]</auteur>
+	<version>0.6</version>
+	<etat>test</etat>
+	<description>
+		<h3>Intégration de l'éditeur WYSIWYG FCKeditor à SPIP 2.0.x</h3>
+
+		Cette intégration de l'éditeur FCKeditor est non invasive (ie: elle ne modifie pas le code de SPIP). Elle utilise le méchanisme des pipelines (ici, on utilise le pipeline : <code>editer_contenu_objet</code>).
+
+
+		Version 0.6 : Mise à jour du plugin avec FCKeditor version {{2.6.5}} par Yannick CAPMARTY - YATY multimédia.
+
+
+		On peut configurer la façon dont s'affiche l'éditeur avec <a href='?exec=cfg&cfg=fckeditor'>CFG</a>.
+
+
+		Le mode d'édition de SPIP reste disponible, et on peut configurer le plugin pour que ce mode soit le mode d'édition par défaut.
+
+	
+		{{Note:}} ce plugin contient un plugin pour fckeditor qui n'est pas diffusé séparément parce qu'il est totalement imbriqué au plugin SPIP.
+
+		{{Licence :}} [GPLv2->http://www.gnu.org/licenses/old-licenses/gpl-2.0.html]
+	</description>
+	<prefix>fckeditor</prefix>
+	<pipeline>
+		<nom>pre_edition</nom>
+		<inclure>fckeditor_fonctions.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>editer_contenu_objet</nom>
+		<inclure>fckeditor_fonctions.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>header_prive</nom>
+		<inclure>fckeditor_fonctions.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>insert_head</nom>
+		<inclure>fckeditor_fonctions.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>editer_contenu_objet</nom>
+		<inclure>fckeditor_fonctions.php</inclure>
+	</pipeline>
+	<icon>fckeditor.png</icon>
+	<necessite id="SPIP" version="[2.0.1;]" />
+	<necessite id='cfg' version='[1.10.0;]' />
+</plugin>

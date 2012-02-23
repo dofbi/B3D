@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * SpipDoc Plugin.
+-->
+<html>
+	<head>
+		<title>SpipDoc</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="noindex, nofollow" name="robots">
+		<script src="../../dialog/common/fck_dialog_common.js" type="text/javascript"></script>
+		<script language="javascript">
+
+var dialog = window.parent ;
+var oEditor = dialog.InnerDialogLoaded() ;
+var FCKLang = oEditor.FCKLang ;
+var FCKSpipDocs = oEditor.FCKSpipDocs ;
+
+window.onload = function ()
+{
+	// First of all, translate the dialog box texts
+	oEditor.FCKLanguageManager.TranslatePage( document ) ;
+
+	LoadSelected() ;
+
+	// Show the "Ok" button.
+	dialog.SetOkButton( true ) ;
+
+	// Select text field on load.
+	SelectField( 'documents' ) ;
+}
+
+var eSelected = dialog.Selection.GetSelection().GetBoundaryParentElement( true ) ;
+var eSelImg = null ;
+var eSelSpan = null ;
+var eSelA = null ;
+var eSelText = null ;
+
+if (eSelected) {
+	if ((eSelected.tagName == 'IMG') && (eSelected.parentNode.tagName == 'A')) {
+		eSelImg = eSelected ;
+		eSelA= eSelected.parentNode ;
+		if ((eSelA.parentNode.tagName == 'SPAN') || (eSelImg.nextSibling.tagName == 'SPAN')) {
+			eSelSpan = eSelA.parentNode ;
+			eSelText = eSelImg.nextSibling ;
+		} else {
+			alert('(1)') ;
+			eSelImg = null ;
+			eSelA = null ;
+			eSelected = null ;
+		}
+	} if ((eSelected.tagName == 'A') && (eSelected.parentNode.tagName == 'SPAN')) {
+		eSelA = eSelected ;
+		eSelSpan = eSelected.parentNode ;
+		if((eSelA.firstChild.tagName == 'IMG') && (eSelA.firstChild.nextSibling.tagName == 'SPAN')) {
+			eSelText = eSelA.firstChild.nextSibling ;
+			eSelImg = eSelA.firstChild ;
+		} else {
+			eSelA = null ;
+			eSelSpan = null ;
+			eSelected = null ;
+		}
+	} else if ((eSelected.tagName == 'SPAN') && (eSelected.parentNode.tagName == 'A')) {
+		eSelText = eSelected ;
+		eSelA = eSelected.parentNode ;
+		if ((eSelA.parentNode.tagName == 'SPAN') && (eSelA.firstChild.tagName =='IMG')) {
+			eSelSpan= eSelA.parentNode ;
+			eSelImg = eSelA.firstChild ;
+		} else {
+			eSelText = null ;
+			eSelA = null ;
+			eSelected = null ;
+		}
+	} else if (eSelected.tagName == 'SPAN') {
+		eSelSpan = eSelected ;
+		if(eSelSpan.firstChild.tagName == 'A') {
+			eSelA = eSelSpan.firstChild ;
+			if ((eSelA.firstChild.tagName == 'IMG') && (eSelA.firstChild.nextSibling.tagName == 'SPAN')) {
+				eSelImg = eSelA.firstChild ;
+				eSelText= eSelImg.nextSibling ;
+			} else {
+				eSelSpan = null ;
+				eSelA = null ;
+				eSelected = null ;
+			}
+		} else {
+			eSelSpan = null ;
+			eSelected = null ;
+		}
+	} else {
+		eSelected = null ;
+	}
+}
+
+
+function LoadSelected()
+{
+	if ( !eSelected )
+		return ;
+
+	switch (eSelSpan.className) {
+		case 'spip_documents spip_documents_left':
+			document.mon_form.align[0].checked = true ;
+			break ;
+		case 'spip_documents spip_documents_right':
+			document.mon_form.align[2].checked = true ;
+			break ;
+		case 'spip_documents spip_documents_center':
+			document.mon_form.align[1].checked = true ;
+			break ;
+		default:
+			eSelImg = null ;
+			eSelSpan= null ;
+			eSelected = null ;
+			return false ;
+			break ;
+	}	
+
+	var sDocuments = document.getElementById('documents') ;
+	for(var i=0; i<sDocuments.options.length ; i++) {
+		if ((FCKSpipDocs.SiteSPIPImg + sDocuments.options[i].value == eSelA.href)) {
+			sDocuments.options[i].selected = 'selected' ;
+		}
+	}
+
+}
+
+function Ok()
+{
+	var sValue = document.getElementById('documents').value ;
+	var sAlign ;
+	for(var i=0; i<document.mon_form.align.length; i++) {
+		if (document.mon_form.align[i].checked) {
+			sAlign = document.mon_form.align[i].value ;
+		}
+	}
+
+	if ( sValue.length == 0 )
+	{
+		alert( FCKLang.SpipDocErrNoName ) ;
+		return false ;
+	}
+
+	if  (eSelected) {
+		FCKSpipDocs.SetupDoc( eSelSpan, eSelImg, eSelA, eSelText, sValue, sAlign ) ;
+	} else {
+		FCKSpipDocs.Add( sValue, sAlign ) ;
+	}
+	return true ;
+}
+
+		</script>
+	</head>
+	<body scroll="no" style="OVERFLOW: hidden">
+		<form name='mon_form'>
+		<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			<tr>
+				<td>
+					<table cellSpacing="0" cellPadding="0" align="center" border="0">
+						<tr>
+							<td colspan='2'>
+								<span fckLang="SpipDocDlgName">Insert SPIP Doc :</span><br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2'>
+	<script type="text/javascript" language="javascript">
+<!--
+var docs = FCKSpipDocs.docs.split(/\|/) ;
+document.write('<select id="documents">') ;
+var regex = /^(.*\/)(.*?)$/ ;
+for(var i=0; i<docs.length ; i++) {
+	document.write('<option value="'+docs[i]+'">'+docs[i].replace(regex,"$2")+'</option>') ;
+}
+document.write('</select>') ;
+-->
+	</script>
+	<br/><span fckLang='SpipDocReloadPage'>If the list isn't up to date, please reload the spip page.
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2'>
+							<fieldset>
+								<legend><span fckLang="SpipDocImgAlign">Align&nbsp;:</span></legend>
+								<input type='radio' name='align' value='left' checked='1' />&nbsp;<span fckLang="SpipDocAlignLeft">left</span><br/>
+								<input type='radio' name='align' value='center' />&nbsp;<span fckLang="SpipDocAlignCenter">center</span><br/>
+								<input type='radio' name='align' value='right' />&nbsp;<span fckLang="SpipDocAlignRight">right</span><br/>
+							</fieldset>
+
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		</form>	
+	</body>
+</html>

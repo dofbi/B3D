@@ -39,7 +39,7 @@
 	width:22px; height:5px;
 	margin-left:auto;
 	margin-right:auto;
-	background-image:url("http://asfosante.org/extensions/porte_plume/css/images/handle.png");
+	background-image:url("http://localhost/asfosante/extensions/porte_plume/css/images/handle.png");
 	cursor:ns-resize;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .markItUp .markItUpHeader ul .markItUpDropMenu {
-	/*background:inherit url("http://asfosante.org/extensions/porte_plume/css/images/menu.png") no-repeat 100% 80%;
+	/*background:inherit url("http://localhost/asfosante/extensions/porte_plume/css/images/menu.png") no-repeat 100% 80%;
 	padding-right:10px;*/
 }
 .markItUp .markItUpHeader ul .markItUpDropMenu li {
@@ -130,7 +130,7 @@
 	float:left;
 }
 .markItUp .markItUpHeader ul ul .markItUpDropMenu {
-	background:#F5F5F5 url("http://asfosante.org/extensions/porte_plume/css/images/submenu.png") no-repeat 50% 50%;
+	background:#F5F5F5 url("http://localhost/asfosante/extensions/porte_plume/css/images/submenu.png") no-repeat 50% 50%;
 }
 .markItUp .markItUpHeader ul .markItUpSeparator {
 	margin:0 6px;

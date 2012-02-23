@@ -1,0 +1,129 @@
+[(#REM) descriptif=
+<h4>Configuration du plugin FCKeditor</h4>
+Ici vous pouvez configurer le fonctionnement de FCKeditor.<br /><br />
+]
+
+[(#REM) titre=FCKeditor]
+[(#REM) icone=fckeditor-24.png]
+
+#CACHE{0}
+<form method="post" action="#self"><div>[(#ENV{_cfg_}|form_hidden)]
+	<div style='margin-bottom:15px;float:right; width:49%;'>
+		<label for="skin">Aspect : </label>
+		<?php
+			$skin = lire_config("fckeditor/skin") ;
+			if (! $skin) {
+				$skin='default' ;
+			}
+			$dir = opendir(getcwd().'/'._DIR_PLUGIN_FCKEDITOR.'fckeditor/editor/skins');
+			print('<select name="skin">') ;
+				while(($item = readdir($dir)) !== false) {
+				if( ($item !== '.') && ($item !== '..') && is_dir(_DIR_PLUGIN_FCKEDITOR.'fckeditor/editor/skins/'.$item) ) {
+					print('<option value="'.$item.'"'.($skin == $item?' selected':'').'>'.ucfirst($item).'</option>') ;
+				}
+			}
+			print("</select>") ;
+		?>
+	</div>
+	<div style='margin-bottom:15px;width:49%;clear:none;'>
+		<label for="editmode">Mode d'édition par défaut : </label>
+		<select name="editmode">
+			<option value="spip" [(#ENV{editmode}|=={'spip'}|?{'selected'})]>spip</option>
+			<option value="wysiwyg" [(#ENV{editmode}|=={'wysiwyg'}|?{'selected'})]>visuel</option>
+		</select>
+		<br/>
+		<input type="checkbox" name="editexclu" [(#ENV{editexclu}|?{'checked'})] style="margin-left:20px;" />&nbsp;uniquement ce mode
+	</div>
+	<div style='margin-bottom:15px; clear:both; width:49%; float:right;'>
+		<label for="taille">Taille de l'éditeur : </label>
+		<input type="text" name="taille" value="[(#ENV{taille}|>0|?{#ENV{taille}, '500'})]" size='5'/>&nbsp;pixels
+	</div>
+	<div style='margin-bottom:15px; width:49%;'>
+		<label for="barre_outils">Barres d'outils : </label>
+		<select name="barre_outils" onchange="toggleVisibility()" id="toolbarselect">
+			<?php
+				$toolbar = lire_config("fckeditor/barre_outils") ;
+				if (! $toolbar) {
+					$toolbar='Default' ;
+				}
+				$file = file_get_contents(getcwd().'/'._DIR_PLUGIN_FCKEDITOR.'fckconfig.js') ; // on cherche dans le fichier de config, les différentes barres d'outils
+				if (preg_match_all("~FCKConfig\.ToolbarSets\[\"(.*?)\"\]~s", $file, $matches)) {
+					foreach($matches[1] as $match) {
+						print("<option value='$match'".($toolbar==$match?' selected':'').">$match</option>\n") ;
+					}
+				}
+			?>
+		</select>
+	</div>
+	<div id="fck_tb_cfg" style='margin-bottom:15px;'>
+		<fieldset style='width:95%;'>
+			<legend>Configurer les barres d'outils :</legend>
+			<table>
+<?php
+
+
+		include(_DIR_PLUGIN_FCKEDITOR."toolbars.defs.php") ;
+
+foreach($fck_toolsbars as $barretype => $barredefs) {
+	print("\t<tr>\n") ;
+	print("\t\t<th>".$barredefs['nom']." :</th>\n") ;
+	print("\t\t<td><input type=\"radio\" name=\"fck_tb_$barretype\" value=\"none\"") ;
+	if (!($selbarre = lire_config("fckeditor/fck_tb_$barretype")) || ($selbarre == 'none')) {
+		print(" checked") ;
+	}
+	print(" />&nbsp;aucune<td>\n") ;
+	foreach($barredefs['barres'] as $barre => $barredef) {
+		print("\t\t<td><input type=\"radio\" name=\"fck_tb_$barretype\" value=\"$barre\"".($selbarre==$barre?" checked":"")." />&nbsp;".$barredef['nom']."</td>\n");
+	}
+
+	print("\t</tr>\n") ;
+}
+
+?>			</table>
+		</fieldset>
+	</div>
+	<script language='javascript'>
+		function toggleVisibility() {
+			if ($('#toolbarselect').val() == 'Configurable') { 
+				$('#fck_tb_cfg').show() ;
+			} else {
+				$('#fck_tb_cfg').hide() ;
+			}
+		}
+		toggleVisibility() ;
+	</script>
+	<div style='margin-bottom:15px;'>
+		<fieldset style='width:95%;'>
+			<legend>Activer le plugin pour :</legend>
+			<input type="checkbox" name="fck_article" [(#ENV{fck_article}|?{'checked'})] />&nbsp;les articles
+			<input type="checkbox" name="fck_rubrique" [(#ENV{fck_rubrique}|?{'checked'})] />&nbsp;les rubriques
+			<input type="checkbox" name="fck_breve" [(#ENV{fck_breve}|?{'checked'})] />&nbsp;les breves
+			<input type="checkbox" name="fck_mot" [(#ENV{fck_mot}|?{'checked'})] />&nbsp;les mots clés
+		</fieldset>
+	</div>
+	<div style='margin-bottom:15px;'>
+		<label for="userfiles">Répertoire des médias : </label>
+		<select name="userfiles">
+			<option value="spip" [(#ENV{userfiles}|=={'spip'}|?{'selected'})]>$SPIP_ROOT/IMG (répertoire par défaut de SPIP)</option>
+			<option value="fckeditor" [(#ENV{userfiles}|=={'fckeditor'}|?{'selected'})]>$PLUGIN_ROOT/userfiles (répertoire par défaut de FCKeditor)</option>
+		</select>
+		<ul>
+			<li>Utilisez 'IMG' pour utiliser le méchanisme de téléchargement de SPIP.</li>
+			<li>Utilisez 'userfiles' pour limiter les téléchargement à l'éditeur.</li>
+		</ul>
+		<p>Dans tous les cas, si les boutons SPIP sont actifs dans l'éditeur, vous pourrez insérer des images via le mécanisme de
+		téléchargement de SPIP.</p>
+		<p>Dans tous les cas, vous pouvez utiliser les raccourcis typographiques de SPIP pour insérer une image, ou autre</p>
+		
+	</div>
+	<div style='margin-bottom:15px;'>
+		<label for="csseditor">Feuille de style spécifique&nbsp;:</label><br/>
+		<!--<input type="text" name="csseditor" value="[(#ENV{csseditor})]"/>-->
+		<textarea name="csseditor" cols="75" rows="4">[(#ENV{csseditor})]</textarea>
+		<p>Par exemple, si vous voulez que les paragraphes créés par FCKeditor soit du même genre que ceux de SPIP, vous pouvez mettre la règle : <code>div{margin-bottom:1em;}</code>. Normalement, tout CSS valide devrait fonctionner.</p>
+	</div>
+	<div style='margin-bottom:15px;'>
+		<input type="submit" name="_cfg_ok" value="<:OK:>" />
+		<input type="submit" name="_cfg_delete" value="<:Supprimer:>" />
+	</div>
+</div></form>

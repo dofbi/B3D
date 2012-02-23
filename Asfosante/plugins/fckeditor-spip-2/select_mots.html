@@ -1,0 +1,8 @@
+<select id="urlspip"><BOUCLE_groupes(GROUPES_MOTS)>
+	<option value="spip.php?page=groupemots&id_groupe=#ID_GROUPE">#TITRE</option><BOUCLE_mots(MOTS) {id_groupe} {par titre}>
+	<option value="#URL_MOT">&nbsp;
+&nbsp;
+&raquo;
+&nbsp;
+#TITRE</option></BOUCLE_mots>
+</BOUCLE_groupes></select>

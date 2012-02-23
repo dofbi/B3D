@@ -1,0 +1,272 @@
+
+				<div class="explication">Vous pouvez enrichir la mise en page de votre texte en utilisant des &laquo;
+&nbsp;
+raccourcis typographiques&nbsp;
+&raquo;
+.<em>
+&nbsp;
+&nbsp;
+<a class='aide'
+href='http://fredlefred.dyndns.org/~fred/wbreart/ecrire/?exec=aide_index&amp;
+aide=raccourcis&amp;
+var_lang=fr'
+onclick="javascript:window.open(this.href,'spip_aide', 'scrollbars=yes, resizable=yes, width=740, height=580');
+ return false;
+"><img src='../prive/images/aide.gif'
+alt="AIDE"  title="De l'aide sur cet &eacute;
+l&eacute;
+ment" class='aide' /></a></em></div>
+				<div><table class='spip_barre' cellpadding='0' cellspacing='0' border='0'>
+<tr>
+<td style='text-align: left;
+' valign='middle'><a
+href="javascript:barre_raccourci('{','}',document.getElementById('text_area'))" tabindex='1000'
+title="Mettre en {italique}"><img
+src='../prive/icones_barre/italique.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Mettre en {italique}"/></a><a
+href="javascript:barre_raccourci('{{','}}',document.getElementById('text_area'))" tabindex='1000'
+title="Mettre en {{gras}}"><img
+src='../prive/icones_barre/gras.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Mettre en {{gras}}"/></a><a
+href="javascript:barre_raccourci('
+
+{{{','}}}
+
+',document.getElementById('text_area'))" tabindex='1000'
+title="Transformer en {{{intertitre}}}"><img
+src='../prive/icones_barre/intertitre.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Transformer en {{{intertitre}}}"/></a></td>
+<td><a
+href="javascript:barre_demande('[','->',']', 'Veuillez indiquer l\'adresse de votre lien (vous pouvez indiquer une adresse Web sous la forme http://www.monsite/com ou simplement indiquer le num&eacute;
+ro d\'un article de ce site.', document.getElementById('text_area'))" tabindex='1000'
+title="Transformer en [lien hypertexte-&gt;
+http://...]"><img
+src='../prive/icones_barre/lien.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Transformer en [lien hypertexte-&gt;
+http://...]"/></a><a
+href="javascript:barre_raccourci('[[',']]',document.getElementById('text_area'))" tabindex='1000'
+title="Transformer en [[Note de bas de page]]"><img
+src='../prive/icones_barre/notes.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Transformer en [[Note de bas de page]]"/></a></td>
+<td style='text-align:left;
+' valign='middle'><a
+href="javascript:barre_raccourci('&laquo;
+','&raquo;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Entourer de &#171;
+ guillemets &#187;
+"><img
+src='../prive/icones_barre/guillemets.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Entourer de &#171;
+ guillemets &#187;
+"/></a><a
+href="javascript:barre_raccourci('&ldquo;
+','&rdquo;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Entourer de &#8220;
+guillemets de second niveau&#8221;
+"><img
+src='../prive/icones_barre/guillemets-simples.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Entourer de &#8220;
+guillemets de second niveau&#8221;
+"/></a><a
+href="javascript:barre_inserer('&Agrave;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Ins&#233;
+rer un A accent grave majuscule"><img
+src='../prive/icones_barre/agrave-maj.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Ins&#233;
+rer un A accent grave majuscule"/></a><a
+href="javascript:barre_inserer('&Eacute;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Ins&#233;
+rer un E accent aigu majuscule"><img
+src='../prive/icones_barre/eacute-maj.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Ins&#233;
+rer un E accent aigu majuscule"/></a><a
+href="javascript:barre_inserer('&oelig;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Ins&#233;
+rer un E dans l&#39;
+O"><img
+src='../prive/icones_barre/oelig.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Ins&#233;
+rer un E dans l&#39;
+O"/></a><a
+href="javascript:barre_inserer('&OElig;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Ins&#233;
+rer un E dans l&#39;
+O majuscule"><img
+src='../prive/icones_barre/oelig-maj.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Ins&#233;
+rer un E dans l&#39;
+O majuscule"/></a><a
+href="javascript:barre_inserer('&euro;
+',document.getElementById('text_area'))" tabindex='1000'
+title="Ins&#233;
+rer le symbole &#8364;
+"><img
+src='../prive/icones_barre/euro.png' style="height: 16px;
+ width: 16px;
+ background-position: center center;
+" alt="Ins&#233;
+rer le symbole &#8364;
+"/></a></td></tr></table></div>
+				<textarea name='texte' id='text_area' class='barre_inserer' lang='fr' rows='10' cols='40'
+				
+onselect='storeCaret(this);
+'
+onclick='storeCaret(this);
+'
+onkeyup='storeCaret(this);
+'
+ondblclick='storeCaret(this);
+'>&lt;
+div&gt;
+&lt;
+u&gt;
+&lt;
+strong&gt;
+&lt;
+span style=&quot;
+font-size: large;
+&quot;
+&gt;
+&lt;
+span style=&quot;
+font-family: serif;
+&quot;
+&gt;
+Todo List pour FCKEditor :&lt;
+/span&gt;
+&lt;
+/span&gt;
+&lt;
+/strong&gt;
+&lt;
+/u&gt;
+&lt;
+/div&gt;
+
+&lt;
+ul&gt;
+
+    &lt;
+li&gt;
+insertion de documents en mode &#39;
+embed&#39;
+&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+&lt;
+span style=&quot;
+color: rgb(255, 0, 0);
+&quot;
+&gt;
+[DONE]&lt;
+/span&gt;
+ insertion de lien vers les br&amp;
+ecirc;
+ves, les sites r&amp;
+eacute;
+f&amp;
+eacute;
+renc&amp;
+eacute;
+ par spip, les auteurs, etc ...&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+gestion des forums spip (peu probable vue qu&#39;
+il n&#39;
+y a pas vraiment de pipeline adapt&amp;
+eacute;
+ &amp;
+agrave;
+ cela)&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+utilisation de l&#39;
+&amp;
+eacute;
+diteur dans d&#39;
+autres champs que &#39;
+texte&#39;
+ (utile ?)&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+un bouton pour l&#39;
+autocorrection des articles mode spip -&amp;
+gt;
+ html et r&amp;
+eacute;
+ciproquement&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+internationnalisable (fr et en au moins)&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+champ alt pour les images (refonte de l&#39;
+obtention des images)&lt;
+/li&gt;
+
+    &lt;
+li&gt;
+correction du bug des titres/descriptions d&#39;
+images&lt;
+/li&gt;
+
+&lt;
+/ul&gt;
+
+&lt;
+div&gt;
+&lt;
+img263|center&gt;
+&lt;
+/div&gt;
+</textarea>
+				
+				<script type='text/javascript'><!--
+				jQuery('document').ready(function(){
+				jQuery('#text_area')
+				.height((jQuery(window).height()-80)+'px');
+
+				});
+
+				//--></script>
+	    

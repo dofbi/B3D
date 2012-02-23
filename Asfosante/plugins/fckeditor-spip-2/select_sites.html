@@ -1,0 +1,8 @@
+<select id="urlspip"><BOUCLE_rubriques(RUBRIQUES)>
+	<option value="#URL_RUBRIQUE">#TITRE</option><BOUCLE_sites(SITES) {id_rubrique} {par date} {inverse} >
+	<option value="spip.php?page=site&id_syndic=#ID_SYNDIC">&nbsp;
+&nbsp;
+&raquo;
+&nbsp;
+#NOM_SITE</option></BOUCLE_sites>
+</BOUCLE_rubriques></select>
