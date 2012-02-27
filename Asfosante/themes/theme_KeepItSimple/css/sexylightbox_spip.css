@@ -1,0 +1,11 @@
+
+/*****************************************************************************/
+/* Règle pour l'affichage de la gallerie Sexy LightBox
+/*****************************************************************************/
+
+.sexylightbox-center {
+	text-align:center;
+}
+.sexylightbox-hidden-container {
+	display: none;
+}

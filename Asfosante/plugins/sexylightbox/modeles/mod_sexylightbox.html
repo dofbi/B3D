@@ -1,0 +1,59 @@
+[(#REM)
+		Modèle mod_sexylightbox (pour SPIP 1.9x)
+		25 août 2011
+        Insère un diaporama Sexy Lightbox sans gallerie
+][(#REM)
+        Les images à visualiser sont jointes à l'article dont l'id suit le nom du modèle, et ajoutées dans le portefolio.
+		La première des images est affichée au point d'insertion du diaporama et permet son lancement.
+		Usage :
+			<mod_sexylightbox25> insère un diaporama Sexy Lightbox avec les images du portfolio de l'article d'id 25
+		Les images qui sont insérées dans l'article ne sont pas concernées.
+]
+
+
+<B_principale>
+[(#REM) Placer les vignettes dans un div pour pouvoir intervenir sur le style]
+<div class="sexylightbox-gallery sexylightbox-center">
+	<h2><:sexylightbox:start_slideshow:></h2>
+<BOUCLE_principale(ARTICLES) {id_article=#ENV{id}}>
+	<B_documents_portfolio>
+			<BOUCLE_documents_portfolio(DOCUMENTS){id_article} {mode=document}{extension IN png,jpg,gif} {par num titre, date}{doublons}{0,1}>
+			<a href="#URL_DOCUMENT" class="slthumb" rel="sexylightbox[gal#ID_ARTICLE]" [title="(#TITRE|attribut_html)"]>
+				<img src="[(#FICHIER|image_reduire{#CONFIG{cfg_sexylightbox/imageSize,500}}|extraire_attribut{src})]" alt="slthumb" [title="(#TITRE|attribut_html)"] />
+			</a>
+			</BOUCLE_documents_portfolio>
+		
+			<B_documents_portfolio_cache>
+				<div class="sexylightbox-hidden-container">
+				<BOUCLE_documents_portfolio_cache(DOCUMENTS){id_article} {mode=document}{extension IN png,jpg,gif} {par num titre, date}{doublons}>
+					<a href="#URL_DOCUMENT" class="slthumb" rel="sexylightbox[gal#ID_ARTICLE]" [title="(#TITRE|attribut_html)"]>c</a>
+				</BOUCLE_documents_portfolio_cache>
+				</div>
+			</B_documents_portfolio_cache>
+	</B_documents_portfolio>
+
+
+[(#REM) On récupère ici un layout pour la couleur choisie. Si le layout dans la langue courante est inexistant, on se rabat sur le layout français]
+#SET{layoutlang,#CONFIG{cfg_sexylightbox/color,black}|concat{-#LANG}}
+[(#GETLAYOUT{sexyimages/#GET{layoutlang}}|?{#SET{layout,#GET{layoutlang}},#SET{layout,#CONFIG{cfg_sexylightbox/color,black}|concat{-fr}}})]
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		if (SexyLightbox.exists) return;
+		SexyLightbox.initialize({
+			find : 'sexylightbox', /* rel="sexylightbox" */
+			dir : '#CHEMIN{sexyimages}',
+			color : '#GET{layout}',
+			[emergefrom : '(#CONFIG{cfg_sexylightbox/emergefrom})',]
+			OverlayStyles:{
+				['background-color':'(#CONFIG{cfg_sexylightbox/backgroundColor})',]  
+				['opacity' : (#CONFIG{cfg_sexylightbox/opacity,60}|div{100})]
+			}
+		});
+	});
+</script>
+
+</BOUCLE_principale>
+</div>
+</B_principale>

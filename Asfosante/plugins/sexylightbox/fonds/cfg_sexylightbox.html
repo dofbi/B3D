@@ -1,0 +1,83 @@
+<!-- descriptif=<img style="float:right;" src="#CHEMIN{img_pack/sexylightbox.png}" /><:sexylightbox:config_page:> -->
+<!-- titre=<:sexylightbox:plugin_name:> -->
+<!-- nom=cfg_sexylightbox -->
+[(#REM) icone=img_pack/sexylightboxIco.png]
+
+
+#CACHE{0}
+
+<form method="post">
+	<fieldset>
+	<legend><:sexylightbox:cfg_configure:></legend>
+	<div>[(#ENV{_cfg_}|form_hidden)]
+		
+	<br />
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<input type="text" name="thumbHeight" value="[(#ENV{thumbHeight}|>={0}|?{#ENV{thumbHeight}, '100'})]" size='3'/>&nbsp;pixels
+		</div>
+		<label for="thumbHeight"><:sexylightbox:thumbheight:></label>
+	</div>
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<input type="text" name="thumbWidth" value="[(#ENV{thumbWidth}|>={0}|?{#ENV{thumbWidth}, '0'})]" size='3'/>&nbsp;pixels
+		</div>
+		<label for="thumbWidth"><:sexylightbox:thumbwidth:></label>
+	</div>
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<input type="text" name="imageSize" value="[(#ENV{imageSize}|>={0}|?{#ENV{imageSize}, '500'})]" size='4'/>&nbsp;pixels
+		</div>
+		<label for="imageSize"><:sexylightbox:image_size:></label>
+	</div>
+	
+	<br /> <br />
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<select name="color">
+				<option value="black" [(#ENV{color}|=={'black'}|?{'selected'})]><:sexylightbox:black:></option>
+				<option value="white" [(#ENV{color}|=={'white'}|?{'selected'})]><:sexylightbox:white:></option>
+			</select>
+		</div>
+		<label for="color"><:sexylightbox:color:></label>
+	</div>
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<select name="emergefrom">
+				<option value="top" [(#ENV{emergefrom}|=={'top'}|?{'selected'})]><:sexylightbox:top:></option>
+				<option value="bottom" [(#ENV{emergefrom}|=={'white'}|?{'bottom'})]><:sexylightbox:bottom:></option>
+			</select>
+		</div>
+		<label for="emergefrom"><:sexylightbox:emergefrom:></label>
+	</div>
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<input type="text" name="backgroundColor" value="[(#ENV{backgroundColor}|?{#ENV{backgroundColor}, '#000000'})]" size='20'/>
+		</div>
+		<label for="backgroundColor"><:sexylightbox:background_color:></label>
+	</div>	
+	
+	<div style='margin-bottom:15px;clear:none;'>
+		<div style='float:right;width:30%;'>
+			<input type="text" name="opacity" value="[(#ENV{opacity}|>{0}|?{#ENV{opacity}|<{100}|?{#ENV{opacity},100}, '60'})]" size='3'/>&nbsp; %
+		</div>
+		<label for="opacity"><:sexylightbox:opacity:></label>
+	</div>
+	
+	
+	
+	
+	
+	</fieldset>
+	
+	<div style='margin-bottom:15px;'>
+		<input type="submit" name="_cfg_ok" value="<:sexylightbox:ok:>" />
+		<input type="submit" name="_cfg_delete" value="<:sexylightbox:delete:>" />
+	</div>
+</form>

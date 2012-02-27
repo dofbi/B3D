@@ -1,0 +1,44 @@
+<plugin>
+	<nom>Sexy LightBox 234</nom>
+	<icon>img_pack/sexylightbox.png</icon>
+	<version>2.3.4</version>
+	<etat>stable</etat>
+	<description>
+{{Un diaporama javascript}}
+
+<u>Caract&#233;ristiques :</u>
+-* Toutes versions de SPIP &#224; partir de SPIP 1.9.2
+-* Le comportement du lecteur Sexy LightBox est param&#233;trable dans l'interface d'administration gr&#226;ce au plugin CFG.
+-* Les images concern&#233;es sont celles jointes &#224; un article et ajout&#233;es dans le portfolio, mais non pr&#233;sentes dans le champ <code>#TEXTE</code> de l'article.
+
+<u>Balise pour ins&#233;rer un lecteur Sexy LightBox</u>
+-* <code>#SEXYLIGHTBOXGALLERY</code> insertion avec portfolio
+-* <code>#SEXYLIGHTBOX</code> insertion sans portfolio
+
+<u>Mod&#232;le &#224; saisir dans le texte d'un article pour ins&#233;rer un lecteur Sexy LightBox</u>
+-* <code><mod_sexylightboxgallerynnn></code> insertion avec portfolio (nnn est l'id de l'article contenant les images &#224; int&#233;grer dans le diaporama)
+-* <code><mod_sexylightboxnnn></code> insertion sans portfolio (nnn est l'id de l'article contenant les images &#224; int&#233;grer dans le diaporama)
+
+	</description>
+	<auteur>	<!-- Auteur du plugin -->
+[Frank RUZZIN->mailto:franck@lededansdubocal.net], juin 2010
+	</auteur>
+	<lien>
+-* Plus d'infos ? - [Le dedans du bocal->http://lededansdubocal.net]
+	</lien>
+	<prefix>sexylightbox</prefix>	
+    <fonctions> <!-- fichier charge a chaque recalcul de page (espace public) -->
+		sexylightbox_mes_fonctions.php
+	</fonctions>
+	<!-- Définitions des fonctions qui s'insèrent dans les pipelines -->
+	<pipeline>
+		<nom>insert_head</nom>
+		<inclure>sexylightbox_pipeline.php</inclure>
+	</pipeline>
+		<pipeline>
+		<nom>header_prive</nom>
+		<inclure>sexylightbox_pipeline.php</inclure>
+	</pipeline>
+	
+	<necessite id='cfg' version='[1.10.0;]' />
+</plugin>

@@ -1,0 +1,60 @@
+[(#REM)
+		Balise sexylightboxgallery (pour SPIP 1.9x)
+		09 juin 2010
+        Insère un diaporama Sexy Lightbox avec gallerie
+][(#REM)
+        Les images à visualiser sont jointes à l'article et ajoutées dans le portefolio.
+		Les images qui sont insérées dans l'article ne sont pas concernées.
+]
+
+
+
+<BOUCLE_principale(ARTICLES) {id_article}>
+	<B_document_portfolio>
+		[(#REM) Placer les vignettes dans un div pour pouvoir intervenir sur le style]
+		<div class="sexylightbox-gallery sexylightbox-center">
+		<h2><:sexylightbox:start_slideshow_gallery:></h2>
+		<BOUCLE_document_portfolio(DOCUMENTS){id_article} {mode=document}{extension IN png,jpg,gif} {par num titre, date}{doublons}>
+			<a href="#URL_DOCUMENT" class="slthumb" rel="sexylightbox[gal#ID_ARTICLE]" [title="(#TITRE|attribut_html)"]>
+				<img src="[(#FICHIER|image_reduire{#CONFIG{cfg_sexylightbox/thumbWidth,0},#CONFIG{cfg_sexylightbox/thumbHeight,100}}|extraire_attribut{src})]" alt="slthumb" [title="(#TITRE|attribut_html)"] />
+			</a>
+		</BOUCLE_document_portfolio>
+		</div>
+	</B_document_portfolio>
+
+
+[(#REM) On récupère ici un layout pour la couleur choisie. Si le layout dans la langue courante est inexistant, on se rabat sur le layout français]
+#SET{layoutlang,#CONFIG{cfg_sexylightbox/color,black}|concat{-#LANG}}
+[(#GETLAYOUT{sexyimages/#GET{layoutlang}}|?{#SET{layout,#GET{layoutlang}},#SET{layout,#CONFIG{cfg_sexylightbox/color,black}|concat{-fr}}})]
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		if (SexyLightbox.exists) return;
+		SexyLightbox.initialize({
+			find : 'sexylightbox', // rel="sexylightbox"
+			dir : '#CHEMIN{sexyimages}',
+			color : '#GET{layout}',
+			[emergefrom : '(#CONFIG{cfg_sexylightbox/emergefrom})',]
+			OverlayStyles:{
+				['background-color':'(#CONFIG{cfg_sexylightbox/backgroundColor})',]  
+				['opacity' : (#CONFIG{cfg_sexylightbox/opacity,60}|div{100})]
+			}
+		});
+	});
+</script>
+
+
+</BOUCLE_principale>
+
+
+
+
+
+
+
+
+
+
+
+
