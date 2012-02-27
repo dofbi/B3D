@@ -5,24 +5,16 @@
 	<div id="container">
 			<div id="slides">
 				<div class="slides_container">
+					<BOUCLE_principale(ARTICLES) {titre_mot=slide}>
 					<div class="slide">
-						<a href="http://www.flickr.com/photos/jliba/4665625073/" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="#CHEMIN{img/slide-1.jpg}" width="570" height="270" alt="Slide 1"></a>
-						<div class="caption" style="bottom:0">
-							<p>Happy Bokeh Thursday!</p>
-						</div>
-					</div>
-					<div class="slide">
-						<a href="http://www.flickr.com/photos/stephangeyer/3020487807/" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="#CHEMIN{img/slide-2.jpg}" width="570" height="270" alt="Slide 2"></a>
+						<a href="#URL_ARTICLE" title="#TITRE">
+							[(#LOGO_ARTICLE|image_recadre{570,270,center,'F4F3F3'}||inserer_attribut{class, 'Slide'})]
+						</a>
 						<div class="caption">
-							<p>Taxi</p>
+						<p>#TITRE</p>
 						</div>
 					</div>
-					<div class="slide">
-						<a href="http://www.flickr.com/photos/childofwar/2984345060/" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="#CHEMIN{img/slide-3.jpg}" width="570" height="270" alt="Slide 3"></a>
-						<div class="caption">
-							<p>Happy Bokeh raining Day</p>
-						</div>
-					</div>
+					</BOUCLE_principale>
 				</div>
 				<a href="#" class="prev"><img src="#CHEMIN{img/arrow-prev.png}" width="24" height="43" alt="Arrow Prev"></a>
 				<a href="#" class="next"><img src="#CHEMIN{img/arrow-next.png}" width="24" height="43" alt="Arrow Next"></a>

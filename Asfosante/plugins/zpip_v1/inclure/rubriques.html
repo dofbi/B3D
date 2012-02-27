@@ -5,7 +5,10 @@
 	on l'affiche si son parent est expose ou est la racine du site. ]
 <B_rubriques>
 <div class="menu rubriques">
-	<h2 class="h2"><:rubriques:></h2>
+	<BOUCLE_extra_rubrique(RUBRIQUES){id_rubrique}>
+	<h2 class="h2">#TITRE</h2>
+	<h4 class="h4"><:rubriques:></h4>
+	</BOUCLE_extra_rubrique>
 	<ul class="menu-liste">
 	<BOUCLE_rubriques(RUBRIQUES) {racine} {par num titre, titre}>
 		<li class="menu-entree">

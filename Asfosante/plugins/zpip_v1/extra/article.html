@@ -2,7 +2,7 @@
 	[(#REM) Articles dans la meme rubrique ]
 	<B_articles_rubrique>
 	<div class="liste articles">
-		<h2 class="h2"><a href="#URL_RUBRIQUE"><:meme_rubrique:></a></h2>
+		<h4 class="h4"><a href="#URL_RUBRIQUE"><:meme_rubrique:></a></h4>
 		<ul class="liste-items">
 			<BOUCLE_articles_rubrique(ARTICLES) {id_rubrique} {par date}{inverse} {0,10}>
 			<li class="item"><a href="#URL_ARTICLE"[ class="(#EXPOSE)"]>#TITRE</a></li>
@@ -14,7 +14,7 @@
   [(#REM) Menu de navigation mots-cles ]
   <B_mots>
   <div class="liste mots">
-      <h2 class="h2"><:mots_clefs:></h2>
+      <h4 class="h4"><:mots_clefs:></h4>
       <ul class="liste-items">
       <BOUCLE_mots(MOTS) {id_article} {par titre}>
           <li class="item"><a href="#URL_MOT" rel="tag">#TITRE</a></li>
