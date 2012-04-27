@@ -1,0 +1,11 @@
+@import url("imports/before.css");
+
+abbr:before
+{
+    content: "Abbr=" attr(title) !important;
+}
+
+acronym:before
+{
+    content: "Acronym=" attr(title) !important;
+}

@@ -1,0 +1,1 @@
+Cufon.replace('nav ul li a', { fontFamily: 'Myriad Pro Regular', hover:true });
