@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="102.40000pt"
+   height="102.40000pt"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.42"
+   sodipodi:docbase="/home/joel/Complexity-0.8/scalable/action"
+   sodipodi:docname="forward.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient9407">
+      <stop
+         id="stop9409"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop9411"
+         offset="1.0000000"
+         style="stop-color:#f2f2f2;stop-opacity:1.0000000;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9399">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop9401" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop9403" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4233">
+      <stop
+         id="stop4235"
+         offset="0.0000000"
+         style="stop-color:#ffffff;stop-opacity:0.71134019;" />
+      <stop
+         id="stop4237"
+         offset="1"
+         style="stop-color:#a50000;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4225">
+      <stop
+         style="stop-color:#a50000;stop-opacity:1;"
+         offset="0"
+         id="stop4227" />
+      <stop
+         style="stop-color:#a50000;stop-opacity:0;"
+         offset="1"
+         id="stop4229" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4233"
+       id="linearGradient4250"
+       gradientUnits="userSpaceOnUse"
+       x1="41.282608"
+       y1="24.013596"
+       x2="96.622932"
+       y2="124.76321" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4233"
+       id="linearGradient4252"
+       gradientUnits="userSpaceOnUse"
+       x1="85.197800"
+       y1="135.17401"
+       x2="34.856033"
+       y2="25.692751" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9407"
+       id="linearGradient9405"
+       x1="41.095528"
+       y1="44.046551"
+       x2="70.371452"
+       y2="88.043877"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.873535,-9.514498e-3,1.016529e-2,-0.933286,117.6605,120.8508)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.1093750"
+     inkscape:cx="64.000000"
+     inkscape:cy="64.000000"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1280"
+     inkscape:window-height="950"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     showgrid="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Forwardbutton</dc:title>
+        <dc:date>10/16/2005</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Joel Montes de Oca</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Joel Montes de Oca</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Joel Montes de Oca</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>forward</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4245"
+       transform="matrix(0.963557,0.000000,0.000000,0.955433,2.423809,2.155116)">
+      <path
+         transform="matrix(1.039157,0.000000,0.000000,1.104762,-6.168676,-17.62495)"
+         d="M 129.11304 74.388405 A 61.588406 58.434784 0 1 1  5.9362297,74.388405 A 61.588406 58.434784 0 1 1  129.11304 74.388405 z"
+         sodipodi:ry="58.434784"
+         sodipodi:rx="61.588406"
+         sodipodi:cy="74.388405"
+         sodipodi:cx="67.524635"
+         id="path1306"
+         style="fill:#a50000;fill-opacity:1.0000000;stroke:none;stroke-width:0.98952878;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-opacity:1.0000000"
+         sodipodi:type="arc" />
+      <path
+         sodipodi:type="arc"
+         style="fill:url(#linearGradient4250);fill-opacity:1.0000000;stroke:none;stroke-width:0.98952878;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-opacity:1.0000000"
+         id="path3497"
+         sodipodi:cx="67.524635"
+         sodipodi:cy="74.388405"
+         sodipodi:rx="61.588406"
+         sodipodi:ry="58.434784"
+         d="M 129.11304 74.388405 A 61.588406 58.434784 0 1 1  5.9362297,74.388405 A 61.588406 58.434784 0 1 1  129.11304 74.388405 z"
+         transform="matrix(1.039157,0.000000,0.000000,1.104762,-6.168676,-17.62495)" />
+      <path
+         transform="matrix(1.039157,0.000000,0.000000,1.104762,-6.168676,-17.62495)"
+         d="M 129.11304 74.388405 A 61.588406 58.434784 0 1 1  5.9362297,74.388405 A 61.588406 58.434784 0 1 1  129.11304 74.388405 z"
+         sodipodi:ry="58.434784"
+         sodipodi:rx="61.588406"
+         sodipodi:cy="74.388405"
+         sodipodi:cx="67.524635"
+         id="path4241"
+         style="fill:url(#linearGradient4252);fill-opacity:1.0000000;stroke:#b53f08;stroke-width:2.7438519;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-opacity:1.0000000"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       id="rect5031"
+       style="fill:url(#linearGradient9405);fill-opacity:1.0000000;stroke:none;stroke-width:0.10000000;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000"
+       d="M 91.571164,69.873198 L 33.860343,69.244615 C 30.218283,69.204946 27.319855,66.084074 27.361646,62.247146 C 27.403438,58.410220 30.369155,55.353220 34.011215,55.392889 L 91.722037,56.021472 C 95.364106,56.061142 98.262526,59.182014 98.220734,63.018940 C 98.178942,66.855867 95.213234,69.912867 91.571164,69.873198 z M 95.824984,68.304032 L 75.572513,86.001548 C 72.767548,88.452651 68.638874,88.049228 66.315402,85.097009 C 63.991929,82.144788 64.379560,77.794816 67.184527,75.343713 L 87.436997,57.646197 C 90.241964,55.195091 94.370635,55.598515 96.694111,58.550734 C 99.017584,61.502953 98.629955,65.852925 95.824984,68.304032 z M 75.618407,39.759969 L 95.875471,57.402766 C 98.681072,59.846293 99.069873,64.195177 96.747224,67.153626 C 94.424574,70.112071 90.296053,70.526611 87.490452,68.083083 L 67.233385,50.440287 C 64.427784,47.996759 64.038981,43.647880 66.361632,40.689431 C 68.684281,37.730987 72.812802,37.316445 75.618407,39.759969 z " />
+  </g>
+</svg>

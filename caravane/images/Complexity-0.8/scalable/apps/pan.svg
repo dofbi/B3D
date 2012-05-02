@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="102.40000pt"
+   id="svg1"
+   inkscape:version="0.42"
+   sodipodi:docbase="/home/Joel/.icons/Complexity-0.3/scalable/apps"
+   sodipodi:docname="pam.svg"
+   sodipodi:version="0.32"
+   width="102.40000pt">
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Newspaper</dc:title>
+        <dc:description>a news paper</dc:description>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>icon</rdf:li>
+            <rdf:li />
+            <rdf:li>11</rdf:li>
+            <rdf:li>work</rdf:li>
+            <rdf:li>icons</rdf:li>
+            <rdf:li>mimeicon</rdf:li>
+            <rdf:li>office</rdf:li>
+            <rdf:li>book</rdf:li>
+            <rdf:li>computer</rdf:li>
+            <rdf:li>news</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://www.openclipart.org">
+            <dc:title>Aubanel MONNIER</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Aubanel MONNIER</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Aubanel MONNIER</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:date />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:language>en</dc:language>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Joel Montes de Oca</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient542">
+      <stop
+         id="stop543"
+         offset="0.00000000"
+         style="stop-color:#0e1e5f;stop-opacity:1.0000000;" />
+      <stop
+         id="stop770"
+         offset="0.35058498"
+         style="stop-color:#0f4f76;stop-opacity:1.0000000;" />
+      <stop
+         id="stop544"
+         offset="0.84552848"
+         style="stop-color:#2979aa;stop-opacity:1.0000000;" />
+      <stop
+         id="stop545"
+         offset="1.0000000"
+         style="stop-color:#000000;stop-opacity:1.0000000;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient452">
+      <stop
+         id="stop453"
+         offset="0.00000000"
+         style="stop-color:#000000;stop-opacity:0.094117649;" />
+      <stop
+         id="stop917"
+         offset="0.14634146"
+         style="stop-color:#000000;stop-opacity:0.27058825;" />
+      <stop
+         id="stop454"
+         offset="1.0000000"
+         style="stop-color:#000000;stop-opacity:0.00000000;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient220">
+      <stop
+         id="stop221"
+         offset="0.00000000"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;" />
+      <stop
+         id="stop224"
+         offset="0.84552848"
+         style="stop-color:#efefef;stop-opacity:1.0000000;" />
+      <stop
+         id="stop222"
+         offset="1.0000000"
+         style="stop-color:#a2a2a2;stop-opacity:1.0000000;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient216">
+      <stop
+         id="stop217"
+         offset="0.00000000"
+         style="stop-color:#505050;stop-opacity:1.0000000;" />
+      <stop
+         id="stop218"
+         offset="1.0000000"
+         style="stop-color:#bfbfbf;stop-opacity:1.0000000;" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(3.474186,0.000000,0.000000,2.882650,-989.4771,-1834.803)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient921"
+       inkscape:collect="always"
+       x1="296.42935"
+       x2="296.37903"
+       xlink:href="#linearGradient216"
+       y1="671.05518"
+       y2="657.97278" />
+    <linearGradient
+       gradientTransform="matrix(3.869785,0.000000,0.000000,2.982342,-1039.887,-2017.518)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient922"
+       inkscape:collect="always"
+       x1="285.51788"
+       x2="285.31543"
+       xlink:href="#linearGradient220"
+       y1="683.88354"
+       y2="714.64282" />
+  </defs>
+  <sodipodi:namedview
+     bordercolor="#666666"
+     borderopacity="1.0"
+     id="base"
+     inkscape:current-layer="layer1"
+     inkscape:cx="107.83048"
+     inkscape:cy="73.428891"
+     inkscape:document-units="px"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:window-height="721"
+     inkscape:window-width="1024"
+     inkscape:window-x="-4"
+     inkscape:window-y="25"
+     inkscape:zoom="0.58739654"
+     pagecolor="#ffffff" />
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       d="M 20.301326,23.491198 C 20.301294,23.491157 3.8220404,88.677805 4.1959950,102.11401 C 4.5699756,115.55022 14.687467,114.97287 14.687467,114.97287 L 114.54052,114.97287 C 114.54052,114.97287 124.65798,115.55022 125.03199,102.11401 C 125.40594,88.677805 108.92662,23.491157 108.92666,23.491198 L 20.301326,23.491198 z "
+       id="path30"
+       inkscape:export-filename="F:\vectoriel\scade\news.png"
+       inkscape:export-xdpi="12.437814"
+       inkscape:export-ydpi="12.437814"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:url(#linearGradient922);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:3.3972111;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000" />
+    <path
+       d="M 63.534531,62.012928 L 22.595803,62.012928 C 22.595803,62.012928 15.120057,86.055705 15.476030,94.221147 C 15.832010,102.38660 19.747900,101.47935 19.747900,101.47935 L 63.534531,101.47935 L 63.534531,62.012928 z "
+       id="path33"
+       inkscape:export-filename="F:\vectoriel\scade\news.png"
+       inkscape:export-xdpi="12.437814"
+       inkscape:export-ydpi="12.437814"
+       style="fill:url(#linearGradient921);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#555555;stroke-width:3.1646302;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000" />
+    <text
+       id="text49"
+       inkscape:export-filename="F:\vectoriel\scade\news.png"
+       inkscape:export-xdpi="12.437814"
+       inkscape:export-ydpi="12.437814"
+       sodipodi:linespacing="110.00000%"
+       style="font-size:1.4645140px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bookman Old Style"
+       x="94.330833"
+       xml:space="preserve"
+       y="29.353621"
+       transform="scale(0.885858,1.128849)"><tspan
+         id="tspan945"
+         sodipodi:role="line"
+         x="94.330833"
+         y="29.353621">Dec 29, 2004 - The Inkscape </tspan><tspan
+         id="tspan947"
+         sodipodi:role="line"
+         x="94.330833"
+         y="30.964586">developers have set a goal</tspan><tspan
+         id="tspan949"
+         sodipodi:role="line"
+         x="94.330833"
+         y="32.575551">for the release of Inkscape 0.41 </tspan><tspan
+         id="tspan951"
+         sodipodi:role="line"
+         x="94.330833"
+         y="34.186517">for mid-late January. There are </tspan><tspan
+         id="tspan953"
+         sodipodi:role="line"
+         x="94.330833"
+         y="35.797482">some noteworthy new features </tspan><tspan
+         id="tspan955"
+         sodipodi:role="line"
+         x="94.330833"
+         y="37.408448">that would be worth getting out </tspan><tspan
+         id="tspan957"
+         sodipodi:role="line"
+         x="94.330833"
+         y="39.019413">to users, and with some major </tspan><tspan
+         id="tspan959"
+         sodipodi:role="line"
+         x="94.330833"
+         y="40.630379">internal changes that will be </tspan><tspan
+         id="tspan961"
+         sodipodi:role="line"
+         x="94.330833"
+         y="42.241344">taking place soon, a good stable </tspan><tspan
+         id="tspan963"
+         sodipodi:role="line"
+         x="94.330833"
+         y="43.852310">release is needed prior to starting </tspan><tspan
+         id="tspan965"
+         sodipodi:role="line"
+         x="94.330833"
+         y="45.463275">such an undertaking.</tspan></text>
+    <text
+       id="text90"
+       inkscape:export-filename="F:\vectoriel\scade\news.png"
+       inkscape:export-xdpi="12.437814"
+       inkscape:export-ydpi="12.437814"
+       sodipodi:linespacing="140.00000%"
+       style="font-size:3.1338527px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;line-height:140.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bookman Old Style"
+       x="78.532791"
+       xml:space="preserve"
+       y="51.507793"
+       transform="scale(0.885858,1.128849)"><tspan
+         id="tspan923"
+         sodipodi:role="line"
+         x="78.532791"
+         y="51.507793">Dec 29, 2004 - The Inkscape </tspan><tspan
+         id="tspan925"
+         sodipodi:role="line"
+         x="78.532791"
+         y="55.895187">developers have set a goal</tspan><tspan
+         id="tspan927"
+         sodipodi:role="line"
+         x="78.532791"
+         y="60.282581">for the release of Inkscape 0.41 </tspan><tspan
+         id="tspan929"
+         sodipodi:role="line"
+         x="78.532791"
+         y="64.669975">for mid-late January. There are </tspan><tspan
+         id="tspan931"
+         sodipodi:role="line"
+         x="78.532791"
+         y="69.057368">some noteworthy new features </tspan><tspan
+         id="tspan933"
+         sodipodi:role="line"
+         x="78.532791"
+         y="73.444762">that would be worth getting out </tspan><tspan
+         id="tspan935"
+         sodipodi:role="line"
+         x="78.532791"
+         y="77.832156">to users, and with some major </tspan><tspan
+         id="tspan937"
+         sodipodi:role="line"
+         x="78.532791"
+         y="82.219550">internal changes that will be </tspan><tspan
+         id="tspan939"
+         sodipodi:role="line"
+         x="78.532791"
+         y="86.606943">taking place soon, a good stable </tspan><tspan
+         id="tspan941"
+         sodipodi:role="line"
+         x="78.532791"
+         y="90.994337">release is needed prior to starting </tspan><tspan
+         id="tspan943"
+         sodipodi:role="line"
+         x="78.532791"
+         y="95.381731">such an undertaking.</tspan></text>
+    <g
+       id="g466"
+       inkscape:export-filename="F:\vectoriel\scade\news.png"
+       inkscape:export-xdpi="12.437814"
+       inkscape:export-ydpi="12.437814"
+       transform="matrix(2.803411,0.000000,0.000000,3.718811,-996.6709,-1916.927)">
+      <text
+         id="text46"
+         sodipodi:linespacing="100.00000%"
+         style="font-size:8.1215105px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+         transform="matrix(1.060598,0.000000,-0.290489,0.942865,0.000000,0.000000)"
+         x="495.84897"
+         xml:space="preserve"
+         y="560.52777"><tspan
+           id="tspan47"
+           sodipodi:role="line"
+           style="letter-spacing:-0.93366069;font-family:Bitstream Vera Sans"
+           x="495.84897"
+           y="560.52777">PAN</tspan></text>
+      <text
+         y="643.96588"
+         xml:space="preserve"
+         x="476.29608"
+         transform="matrix(1.212521,0.000000,-0.332100,0.824728,0.000000,0.000000)"
+         style="font-size:3.8139126px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:100.00000%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1.0000000;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;font-family:Bitstream Vera Sans"
+         sodipodi:linespacing="100.00000%"
+         id="text1356"><tspan
+           y="643.96588"
+           x="476.29608"
+           style="letter-spacing:-0.43845293;font-family:Bitstream Vera Sans"
+           sodipodi:role="line"
+           id="tspan1358">NEWS</tspan></text>
+    </g>
+    <rect
+       height="11.467446"
+       id="rect620"
+       inkscape:export-filename="F:\vectoriel\scade\news.png"
+       inkscape:export-xdpi="12.437814"
+       inkscape:export-ydpi="12.437814"
+       style="color:#000000;fill:none;fill-opacity:1.0000000;fill-rule:nonzero;stroke:none;stroke-width:3.0000000;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4.0000000;stroke-dashoffset:0.0000000;stroke-opacity:1.0000000;visibility:visible;display:block"
+       width="111.87955"
+       x="4.8521442"
+       y="46.536678" />
+  </g>
+</svg>

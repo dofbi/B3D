@@ -1,0 +1,87 @@
+10/16/2005 1:51PM Joel M
+-Added stock/gtk-go-back.svg
+-Added stock/gtk-go-down.svg
+-Added stock/gtk-go-forward-ltr.svg
+-Added stock/gtk-go-up.svg
+-Added stock/stock_people.svg
+-Added stock/gtk-refresh
+-Added stock/gtk-stop
+
+10/14/2005 10:42PM Joel M
+-Added stock/gtk-lock.svg
+-Added stock/gtk-lock-ok.svg
+-Added stock/gtk-lock-broken.svg
+-Removed all duplicate images and replaced them with links to the original corresponding image
+-Removed file dev/gnome-panel-screenshot.svg
+-Removed file dev/gnome-screenshot.svg
+-Renamed file apps/gnome-panel-screenshot.svg to applets-screenshooter.svg
+-Replaced file mimetypes/gnome-mime-text-x-authors.svg with a new and improved image
+-Replaced file mimetypes/gnome-mime-text-x-credits.svg with a new and improved image
+
+10/12/2005 10:23PM Joel M
+-Added dev/gnome-dev-battery.svg
+-Added apps/gnome-netstatus-disconn.svg
+-Added apps/gnome-netstatus-error.svg
+-Added mimetypes/gnome-mime-application-blander.svg
+-Added mimetypes/gnome-mime-text-x-authors.svg
+-Added mimetypes/gnome-mime-text-x-credits.svg
+-Added stock/generic
+-Added stock/generic/stock_weather-few-clouds.svg
+-Added stock/generic/stock_weather-sunny.svg
+-Added stock/generic/stock_weather-fog.svg
+-Added stock/generic/stock_news.svg
+
+10/09/2005 3:19PM Joel M
+-Added apps/xchat.svg
+o This icon will have to change soon. It is only here temporary because I hate the default smiley face
+-Added mimetypes/gnome-mime-application-wine.svg
+-Added mimetypes/gnome-mime-application-x-cd-image.svg
+
+10/06/2005 9:36PM Joel M
+-Improved gnome-mime-application-pgp-encrypted.svg
+-Added filesystems/gnome-fs-client.svg
+-Added apps/clock.svg
+-Added apps/config-xfree.svg
+-Added apps/gdm.svg
+-Added apps/gnome-gsame.svg
+-Added apps/gnome-netstatus-idle.svg
+-Added apps/gnome-netstatus-rx.svg
+-Added apps/gnome-netstatus-tx.svg
+-Added apps/gnome-netstatus-txrx.svg
+-Added apps/gnome-terminal.svg
+-Added apps/wine.svg
+-Removed apps/pam.svg
+
+09/29/2005 2:46PM Joel M
+-Replaced /filesystem/gnome-fs-trash-empty.svg and nome-fs-trash-full.svg 
+with another image.
+-Added filesystems/gnome-fs-trash-empty-accept
+-Added filesystems/gnome-fs-directory-accept
+-Added mimetypes/encryted.svg
+-Added mimetypes/file-generic.svg
+-Added mimetypes/cd.svg
+-Added mimetypes/file-gimp
+-Added mimetypes/gnome-mime-text-x-copying.svg
+
+09/27/2005 9:37PM JOEL M
+-Fixed typo in the file /app/pam.svg. 
+The file along with the image were renamed to pan.
+
+09/24/2005 2:09PM Joel M
+-Added apps/blender.svg
+-Added apps/gnome-help.svg
+-Added apps/gnome-screenshot.svg
+-Added apps/gnome-panel-screenshot.svg
+-Added apps/gkam.svg
+-Added apps/pam.svg
+-Added devices/gnome-dev-ipod.svg
+
+09/23/2005 6:20PM Joel M
+-Created the gnome-fs-directory icon
+
+09/23/2005 5:19PM JOEL M
+-Edited scalable/filesystems/gnome-fs-trash-full.svg
+Changed the direction the cover of the trash can opens. 
+
+09/23/2005 3:18PM JOEL M
+-Created Complexity

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.1, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="314px" height="271px" viewBox="-0.515 -0.321 314 271" enable-background="new -0.515 -0.321 314 271"
+	 xml:space="preserve">
+<defs>
+</defs>
+<path fill="#E5E5E5" stroke="#000000" stroke-width="10" d="M288.646,5H23.91C13.467,5,5,13.465,5,23.909v171.11
+	c0,10.445,8.467,18.91,18.91,18.91h118.185v16.025C128.24,235.564,118.46,249.126,118.46,265h75.639
+	c0-15.873-9.781-29.436-23.638-35.045v-16.025h118.186c10.444,0,18.911-8.465,18.911-18.91V23.909
+	C307.557,13.465,299.09,5,288.646,5z"/>
+<rect x="23.91" y="23.909" fill="#5A3E1C" stroke="#000000" stroke-width="5" width="264.736" height="148.971"/>
+<path fill="#FDBE10" d="M73.778,115.27v-52.5h7.5v22.5h22.5v-22.5h7.5v52.5h-7.5v-22.5h-22.5v22.5H73.778z"/>
+<path fill="#FDBE10" d="M118.778,107.77v-22.5h7.5v7.5h15v7.5h-15v7.5H118.778z M126.278,85.27v-7.5h15v7.5H126.278z
+	 M126.278,115.27v-7.5h22.5v7.5H126.278z M141.278,92.77v-7.5h7.5v7.5H141.278z"/>
+<path fill="#FDBE10" d="M156.278,107.77v-45h7.5v45H156.278z M163.778,115.27v-7.5h7.5v7.5H163.778z"/>
+<path fill="#FDBE10" d="M178.778,107.77v-45h7.5v45H178.778z M186.278,115.27v-7.5h7.5v7.5H186.278z"/>
+<path fill="#FDBE10" d="M201.278,107.77v-22.5h7.5v22.5H201.278z M208.778,85.27v-7.5h15v7.5H208.778z M208.778,115.27v-7.5h15v7.5
+	H208.778z M223.778,107.77v-22.5h7.5v22.5H223.778z"/>
+<path opacity="0.25" d="M23.91,5C13.467,5,5.003,13.475,5.003,23.917v91.812C9.992,111.304,156.293,28.781,254.125,5H23.91z"/>
+<circle fill="#B2B2B2" stroke="#000000" stroke-width="2" cx="254.253" cy="192.562" r="4.425"/>
+<circle fill="#B2B2B2" stroke="#000000" stroke-width="2" cx="269.012" cy="192.562" r="4.425"/>
+<circle fill="#B2B2B2" stroke="#000000" stroke-width="2" cx="284.126" cy="192.562" r="4.426"/>
+</svg>

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="SaintLouisWeb.svg">
+  <defs
+     id="defs4">
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask3985">
+      <path
+         sodipodi:type="arc"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         id="path3987"
+         sodipodi:cx="414.54135"
+         sodipodi:cy="116.83466"
+         sodipodi:rx="18.561554"
+         sodipodi:ry="18.561554"
+         d="m 433.10291,116.83466 a 18.561554,18.561554 0 1 1 -37.12311,0 18.561554,18.561554 0 1 1 37.12311,0 z"
+         transform="matrix(18.617907,0,0,18.617907,-7262.6223,-1871.9023)" />
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2541667"
+     inkscape:cx="242.4925"
+     inkscape:cy="608.24656"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3993"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1392"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <g
+       id="g3993"
+       transform="translate(58.104711,-35.355339)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2985"
+         y="89.871735"
+         x="392.32214"
+         style="font-size:66.39970398px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Big Caslon;-inkscape-font-specification:Big Caslon Medium"
+         xml:space="preserve"><tspan
+           style="font-size:56px;fill:#000000"
+           y="89.871735"
+           x="392.32214"
+           id="tspan2987"
+           sodipodi:role="line">Saint Louis</tspan></text>
+      <rect
+         y="100.54311"
+         x="-57.808422"
+         height="32.014145"
+         width="715.06805"
+         id="rect2989"
+         style="fill:#00853f;fill-opacity:1;stroke:none" />
+      <g
+         mask="url(#mask3985)"
+         transform="matrix(0.05299374,0,0,0.05334345,624.34055,100.54311)"
+         id="g3202">
+        <rect
+           style="fill:#00853f"
+           y="0"
+           x="0"
+           width="300"
+           height="600"
+           id="rect3176" />
+        <rect
+           style="fill:#fdef42"
+           y="0"
+           x="300"
+           width="300"
+           height="600"
+           id="rect3178" />
+        <rect
+           style="fill:#e31b23"
+           y="0"
+           x="600"
+           width="300"
+           height="600"
+           id="rect3180" />
+        <g
+           style="fill:#00853f"
+           transform="translate(450,300)"
+           id="g3182">
+          <g
+             id="c">
+            <path
+               inkscape:connector-curvature="0"
+               id="t"
+               d="M 0,-100 V 0 h 50 z"
+               transform="matrix(0.95105652,0.30901699,-0.30901699,0.95105652,-30.901699,-4.8943484)" />
+            <use
+               height="1"
+               width="1"
+               y="0"
+               x="0"
+               xlink:href="#t"
+               transform="scale(-1,1)"
+               id="use3186" />
+          </g>
+          <use
+             height="1"
+             width="1"
+             y="0"
+             x="0"
+             xlink:href="#c"
+             transform="matrix(0.30901699,0.95105652,-0.95105652,0.30901699,0,0)"
+             id="use3188" />
+          <use
+             height="1"
+             width="1"
+             y="0"
+             x="0"
+             xlink:href="#c"
+             transform="matrix(-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0)"
+             id="use3190" />
+          <use
+             height="1"
+             width="1"
+             y="0"
+             x="0"
+             xlink:href="#c"
+             transform="matrix(-0.80901699,-0.58778525,0.58778525,-0.80901699,0,0)"
+             id="use3192" />
+          <use
+             height="1"
+             width="1"
+             y="0"
+             x="0"
+             xlink:href="#c"
+             transform="matrix(0.30901699,-0.95105652,0.95105652,0.30901699,0,0)"
+             id="use3194" />
+        </g>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3989"
+         y="123.19555"
+         x="399.44977"
+         style="font-size:81.29525757px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           style="font-size:18.29143333px;fill:#ffffff"
+           y="123.19555"
+           x="399.44977"
+           id="tspan3991"
+           sodipodi:role="line">MAIRIE DE SAINT LOUIS</tspan></text>
+      <image
+         y="280.67923"
+         x="16.489416"
+         id="image4074"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/civil.png"
+         height="35"
+         width="35" />
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="33.356602"
+         y="333.53458"
+         id="text4077"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4079"
+           x="35.465977"
+           y="333.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle">Faire une demande </tspan><tspan
+           sodipodi:role="line"
+           x="33.356602"
+           y="348.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan4081">d'acte d'état civil</tspan></text>
+      <image
+         y="280.67923"
+         x="156.39555"
+         id="image4142"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/archive.png"
+         height="35"
+         width="35" />
+      <image
+         y="280.67923"
+         x="296.3017"
+         id="image4204"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/recrutement.png"
+         height="35"
+         width="35" />
+      <image
+         y="280.67923"
+         x="436.20782"
+         id="image4266"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/aide.png"
+         height="35"
+         width="35" />
+      <image
+         y="280.67923"
+         x="576.11389"
+         id="image4328"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/musee.png"
+         height="35"
+         width="35" />
+      <image
+         y="388.76556"
+         x="16.489416"
+         id="image4390"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/bibliothe%CC%81que.png"
+         height="35"
+         width="35" />
+      <image
+         y="388.76556"
+         x="156.39555"
+         id="image4484"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/agenda.png"
+         height="35"
+         width="35" />
+      <image
+         y="388.76556"
+         x="296.3017"
+         id="image4546"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/marchet.png"
+         height="35"
+         width="35" />
+      <image
+         y="388.76556"
+         x="436.20782"
+         id="image4608"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/tel.png"
+         height="35"
+         width="35" />
+      <image
+         y="388.76556"
+         x="576.11389"
+         id="image4705"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/poubel.png"
+         height="35"
+         width="35" />
+      <image
+         y="487.08795"
+         x="16.489416"
+         id="image4767"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/maire.png"
+         height="34"
+         width="35" />
+      <image
+         y="486.58795"
+         x="156.39555"
+         id="image4829"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/aider.png"
+         height="35"
+         width="35" />
+      <image
+         y="486.58795"
+         x="296.3017"
+         id="image4945"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/aides.png"
+         height="35"
+         width="35" />
+      <image
+         y="486.58795"
+         x="436.20782"
+         id="image5007"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/traveaux.png"
+         height="35"
+         width="35" />
+      <image
+         y="487.08795"
+         x="576.11389"
+         id="image5069"
+         xlink:href="file:///Users/genova/github/B3D/saintlouis/images/icone/stage.png"
+         height="34"
+         width="35" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5072"
+         y="333.53458"
+         x="173.80766"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5076"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="333.53458"
+           x="173.80766"
+           sodipodi:role="line">Consultez les archives</tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="348.53458"
+           x="175.91704"
+           sodipodi:role="line"
+           id="tspan5336"> généalogiques </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="313.4472"
+         y="333.53458"
+         id="text5078"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="313.4472"
+           y="333.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5082">Comment travailler</tspan><tspan
+           sodipodi:role="line"
+           x="315.55658"
+           y="348.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5332">à la mairie ? </tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5084"
+         y="333.53458"
+         x="453.15997"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5088"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="333.53458"
+           x="453.15997"
+           sodipodi:role="line">Retrouvez toutes</tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="348.53458"
+           x="455.26935"
+           sodipodi:role="line"
+           id="tspan5328">les aides et prestations </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="594.05627"
+         y="333.53458"
+         id="text5090"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="594.05627"
+           y="333.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5094">Voir une exposition</tspan><tspan
+           sodipodi:role="line"
+           x="594.05627"
+           y="348.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5324">dans un musée</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5096"
+         y="441.53458"
+         x="34.206215"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5100"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="441.53458"
+           x="34.206215"
+           sodipodi:role="line">Accéder au catalogue</tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="456.53458"
+           x="34.206215"
+           sodipodi:role="line"
+           id="tspan5320">des bibliothèques</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="173.82817"
+         y="441.53458"
+         id="text5102"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="175.93755"
+           y="441.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5106">Que faire à </tspan><tspan
+           sodipodi:role="line"
+           x="173.82817"
+           y="456.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5316">Saint Louis ?</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5108"
+         y="441.53458"
+         x="313.46478"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5112"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="441.53458"
+           x="313.46478"
+           sodipodi:role="line">Horaires des marchés</tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="456.53458"
+           x="315.57416"
+           sodipodi:role="line"
+           id="tspan5312">près de chez vous </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="453.37091"
+         y="441.53458"
+         id="text5114"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="453.37091"
+           y="441.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5118">Retrouvez les numéros</tspan><tspan
+           sodipodi:role="line"
+           x="455.48029"
+           y="456.53458"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5308">les plus utiles </tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5120"
+         y="441.53458"
+         x="593.38538"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5124"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="441.53458"
+           x="593.38538"
+           sodipodi:role="line">Une ville propre</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="33.922035"
+         y="539.53455"
+         id="text5126"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="33.922035"
+           y="539.53455"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5130">Accédez aux décisions</tspan><tspan
+           sodipodi:role="line"
+           x="33.922035"
+           y="554.53455"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5302">du Conseil de Saint Louis</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5132"
+         y="539.53455"
+         x="174.18852"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5136"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="539.53455"
+           x="174.18852"
+           sodipodi:role="line">Trouver un centre</tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="554.53455"
+           x="174.18852"
+           sodipodi:role="line"
+           id="tspan5298"> de dépistage</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="313.8017"
+         y="539.53455"
+         id="text5138"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="315.91107"
+           y="539.53455"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5142">Trouver un centre </tspan><tspan
+           sodipodi:role="line"
+           x="313.8017"
+           y="554.53455"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5294">de dépistage</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5144"
+         y="539.53455"
+         x="453.37091"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         xml:space="preserve"><tspan
+           id="tspan5148"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="539.53455"
+           x="455.48029"
+           sodipodi:role="line">Consultez tous </tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="554.53455"
+           x="453.37091"
+           sodipodi:role="line"
+           id="tspan5290">les chantiers</tspan><tspan
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           y="569.53455"
+           x="453.37091"
+           sodipodi:role="line"
+           id="tspan5288"> de la capitale</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="593.55237"
+         y="539.53455"
+         id="text5150"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="593.55237"
+           y="539.53455"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5280">Effectuer un stage à la</tspan><tspan
+           sodipodi:role="line"
+           x="593.55237"
+           y="554.53455"
+           style="font-size:12px;text-align:center;text-anchor:middle"
+           id="tspan5284"> Mairie de Saint Louis</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
+         x="192.35074"
+         y="189.69189"
+         id="text5338"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan5340"
+           x="192.35074"
+           y="189.69189"
+           style="font-size:20px">Une mairie de proximité</tspan></text>
+    </g>
+  </g>
+</svg>
